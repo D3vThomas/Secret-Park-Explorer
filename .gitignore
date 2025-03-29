@@ -46,3 +46,6 @@ app.*.map.json
 
 # Exclure AndroidManifest.xml
 /android/app/src/main/AndroidManifest.xml
+
+# Ajoutez la ligne suivante à votre .gitignore
+.vscode/
