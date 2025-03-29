@@ -1,0 +1,30 @@
+name: disney_secret
+description: "Carte Disney - Secrets est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets à Disneyland Paris."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+    sdk: ^3.7.2
+
+dependencies:
+    flutter:
+        sdk: flutter
+    google_maps_flutter: ^2.2.1
+
+dev_dependencies:
+    flutter_test:
+        sdk: flutter
+    flutter_lints: ^5.0.0
+    flutter_launcher_icons: ^0.14.3
+
+flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/logo.jpg"
+
+flutter:
+    uses-material-design: true
+    generate: true
+    assets:
+        - assets/markers.json
+        - assets/logo.jpg
