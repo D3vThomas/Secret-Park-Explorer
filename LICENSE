@@ -2,54 +2,12 @@ MIT License
 
 Copyright (c) 2025 - Thomas LUCAS
 
-Par la présente, il est accordé gratuitement à toute personne obtenant une copie
-de ce logiciel et des fichiers de documentation associés (le "Logiciel"), de traiter
-le Logiciel sans restriction, y compris sans limitation les droits
-d'utiliser, copier, modifier, fusionner, publier, distribuer, sous-licencier et/ou vendre
-des copies du Logiciel, et d'autoriser les personnes à qui le Logiciel est fourni à le faire, sous réserve des conditions suivantes :
+Par la présente, il est accordé gratuitement à toute personne obtenant une copie de ce logiciel et des fichiers de documentation associés (le "Logiciel"), de traiter le Logiciel, à condition de respecter les restrictions suivantes :
 
-La notice de copyright ci-dessus et la présente autorisation doivent être incluses dans toutes
-les copies ou portions substantielles du Logiciel.
+1. Vous pouvez utiliser, copier, modifier, et améliorer le Logiciel pour votre usage personnel et dans le cadre du dépôt (repository) d'origine.
 
-LE LOGICIEL EST FOURNI "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
-IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE COMMERCIALISATION,
-D'ADAPTATION À UN USAGE PARTICULIER ET DE NON-VIOLATION. EN AUCUN CAS, LES
-AUTEURS OU LES DÉTENTEUR DE DROITS D'AUTEUR NE SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGES OU AUTRE
-RESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION DE CONTRAT, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
-OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU AUTRES TRANSACTIONS DANS
-LE LOGICIEL.
+2. Vous pouvez distribuer les versions modifiées du Logiciel uniquement dans ce même dépôt (repository) ou dans un dépôt similaire, sous réserve que la mention de copyright et la présente autorisation soient incluses.
 
----
+3. La publication du Logiciel ou de ses versions modifiées sur des plateformes tierces, telles que le Play Store, App Store, ou d'autres services similaires, est strictement interdite sans une autorisation écrite préalable du détenteur des droits d'auteur.
 
-MIT License
-
-Copyright (c) 2025 - Thomas LUCAS
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-<<<<<<< HEAD
-copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-=======
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-> > > > > > > 519b33800650eac112430139fb1adeb9dc314219
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-<<<<<<< HEAD
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-=======
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-> > > > > > > 519b33800650eac112430139fb1adeb9dc314219
+LE LOGICIEL EST FOURNI "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE COMMERCIALISATION, D'ADAPTATION À UN USAGE PARTICULIER ET DE NON-VIOLATION. EN AUCUN CAS, LES AUTEURS OU LES DÉTENTEUR DE DROITS D'AUTEUR NE SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGES OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION DE CONTRAT, DÉLICTUELLE OU AUTRE, DÉCOULANT DE, OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU AUTRES TRANSACTIONS DANS LE LOGICIEL.
