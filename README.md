@@ -9,6 +9,10 @@
 -   Détails des points d’intérêt avec des informations supplémentaires lorsqu'on clique sur un marqueur.
 -   Utilisation de l'API Google Maps pour l'affichage de la carte.
 
+## Screenshot de l'application
+
+![Screen de l'application](assets/screenshots/screenshot.png)
+
 ## Détail des fonctionnalités
 
 1. **Affichage de la carte** : La carte utilise l'API Google Maps pour afficher les points d'intérêt et les lieux secrets.
@@ -121,27 +125,6 @@ Nous apprécions toutes les contributions et suggestions !
 ## Licence
 
 Ce projet est sous la licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-```
-
-### Explication des sections :
-
-- **Titre** : `Disney-Secret-App`.
-- **Description** : Introduction de l'application et de ses fonctionnalités.
-- **Fonctionnalités** : Liste des principales fonctionnalités de l'application.
-- **Détail des fonctionnalités** : Description plus détaillée des fonctionnalités spécifiques.
-- **Prérequis** : Instructions pour préparer l'environnement.
-- **Installation** : Étapes pour cloner le projet et installer les dépendances.
-- **Configurer la clé API Google Maps** : Processus détaillé pour configurer la clé API.
-- **Ajouter la clé API dans le `AndroidManifest.xml`** : L'endroit où placer la clé API dans le fichier AndroidManifest.
-- **Lancer l'application** : Commande pour démarrer l'application sur un appareil.
-- **Générer l'APK** : Commande pour créer un fichier APK de l'application.
-- **Structure du projet** : Vue d'ensemble de la structure des dossiers et fichiers.
-- **Contribuer** : Instructions pour contribuer au projet via des pull requests.
-- **Licence** : Information sur la licence utilisée pour ce projet.
-
-Cela couvre toutes les informations importantes pour les utilisateurs et développeurs du projet. Vous pouvez simplement copier ce contenu dans votre fichier `README.md`.
-```
 
 ```
 
