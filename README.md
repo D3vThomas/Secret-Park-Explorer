@@ -1,6 +1,3 @@
-Voici le fichier `README.md` structuré selon vos demandes, avec les sections que vous avez mentionnées :
-
-````markdown
 # Disney-Secret-App
 
 ## Description
@@ -39,7 +36,6 @@ Clonez le projet en utilisant la commande suivante :
 git clone https://github.com/dieuthomas/Disney-Secret-App.git
 cd Disney-Secret-App
 ```
-````
 
 ### 2. Installer les dépendances
 
@@ -147,4 +143,8 @@ Ce projet est sous la licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour p
 - **Licence** : Information sur la licence utilisée pour ce projet.
 
 Cela couvre toutes les informations importantes pour les utilisateurs et développeurs du projet. Vous pouvez simplement copier ce contenu dans votre fichier `README.md`.
+```
+
+```
+
 ```
