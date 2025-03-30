@@ -1,4 +1,4 @@
-# Disney-Secret-App testestest
+# Disney-Secret-App
 
 **Carte Disney - Secrets** est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets à Disneyland Paris. Explorez les différents secrets du parc, filtrez les lieux par catégorie, et obtenez des informations détaillées sur chaque endroit.
 
