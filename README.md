@@ -11,9 +11,11 @@
 
 ## Screenshot de l'application
 
-<img src="assets/screenshots/screenshot.jpg" width="300" />
-<img src="assets/screenshots/screenshot2.jpg" width="300" />
-<img src="assets/screenshots/screenshot3.jpg" width="300" />
+<div style="display: flex; justify-content: space-around;">
+  <img src="assets/screenshots/screenshot.jpg" width="300" />
+  <img src="assets/screenshots/screenshot2.jpg" width="300" />
+  <img src="assets/screenshots/screenshot3.jpg" width="300" />
+</div>
 
 ## Détail des fonctionnalités
 
