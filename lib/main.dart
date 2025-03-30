@@ -81,10 +81,15 @@ class _MapScreenState extends State<MapScreen> {
                     infoWindow: InfoWindow(
                         title: markerData['name'],
                         snippet: "Cliquez pour plus de détails",
-                        onTap: () => _showMarkerDetail(markerData['name'], markerData['detail']),
+                        onTap: () => _showMarkerDetail(
+                            markerData['name'], 
+                            markerData['detail'], 
+                            markerData['image'],
+                        ),
                     ),
                     icon: markerIcon,
                 );
+
 
                 markers.add(marker);
                 markerTypes[markerData['name']] = markerData['type'];
@@ -111,16 +116,50 @@ class _MapScreenState extends State<MapScreen> {
         });
     }
 
-    void _showMarkerDetail(String title, String detail) {
+    void _showMarkerDetail(String title, String detail, String? imageName) {
         showDialog(
             context: context,
             builder: (BuildContext context) {
                 return AlertDialog(
                     title: Text(title),
-                    content: Text(detail),
+                    content: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                            Text(detail),
+                            if (imageName != null && imageName.isNotEmpty)
+                                ElevatedButton(
+                                    onPressed: () {
+                                        Navigator.of(context).pop(); 
+                                        _showImage(context, imageName, title, detail); 
+                                    },
+                                    child: Text("Photo"),
+                                ),
+                        ],
+                    ),
                     actions: [
                         TextButton(
                             onPressed: () => Navigator.of(context).pop(),
+                            child: Text("Fermer"),
+                        ),
+                    ],
+                );
+            },
+        );
+    }
+
+    void _showImage(BuildContext context, String imageName, String title, String detail) {
+        showDialog(
+            context: context,
+            builder: (BuildContext context) {
+                return AlertDialog(
+                    content: Image.asset("assets/images/$imageName"),
+                    actions: [
+                        TextButton(
+                            onPressed: () {
+                                Navigator.of(context).pop();
+                                // Réouvre la popup de détail
+                                _showMarkerDetail(title, detail, imageName);
+                            },
                             child: Text("Fermer"),
                         ),
                     ],
@@ -144,7 +183,7 @@ class _MapScreenState extends State<MapScreen> {
                 Padding(
                     padding: const EdgeInsets.only(right: 10.0),
                     child: Image.asset(
-                        "assets/logo.jpg",
+                        "assets/logo.png",
                         height: 100,
                     ),
                 ),

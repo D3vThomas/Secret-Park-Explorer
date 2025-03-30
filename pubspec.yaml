@@ -20,11 +20,12 @@ dev_dependencies:
 flutter_icons:
     android: true
     ios: true
-    image_path: "assets/logo.jpg"
+    image_path: "assets/logo.png"
 
 flutter:
     uses-material-design: true
     generate: true
     assets:
         - assets/markers.json
-        - assets/logo.jpg
+        - assets/logo.png
+        - assets/images/

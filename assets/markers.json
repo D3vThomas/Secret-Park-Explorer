@@ -1,150 +1,160 @@
 [
     {
-        "name": "L'entrée de Disneyland Paris fait référence aux cinémas",
+        "name": "L'entrée de Disneyland Paris s'inspire de l'univers du cinéma.",
         "latitude": 48.870737,
         "longitude": 2.779221,
         "type": "secret_main_street",
-        "detail": "Dès l'entrée dans le parc, celle-ci a pour thème le cinéma. Sur les murs, on trouve des affiches des attractions ressemblant à des affiches de cinéma. Les Cast-members portent des costumes d'ouvreurs de salles de cinéma de l'époque !"
+        "image": "entrance_cinema.png",
+        "detail": "Dès que l'on pénètre dans le parc, l'ambiance cinématographique est omniprésente. Les murs sont décorés d'affiches des attractions, qui rappellent celles des films. Les Cast-members, quant à eux, sont vêtus de costumes évoquant ceux des ouvreurs de cinéma d'autrefois !"
     },
     {
-        "name": "Les plafonds de Main Street Station",
+        "name": "Les plafonds de la gare de Main Street.",
         "latitude": 48.870837,
         "longitude": 2.779083,
         "type": "secret_main_street",
-        "detail": "Sous la gare de Main Street U.S.A, les plafonds sont très bas pour donner l'impression aux visiteurs d'être écrasés et leur permettre, en entrant sur Town Square, de voir le parc plus grand et aéré."
+        "detail": "Sous la gare de Main Street U.S.A, les plafonds sont volontairement bas afin de créer une sensation d'étouffement, contrastant avec l'effet d'ouverture et d'espace que les visiteurs ressentent en arrivant sur le Town Square, où le parc apparaît plus vaste et aéré."
     },
     {
-        "name": "Les vitraux de Main Street Station et l'ancienne signalétique",
+        "name": "Les vitraux de la gare de Main Street",
         "latitude": 48.87099,
         "longitude": 2.778887,
         "type": "secret_main_street",
-        "detail": "Dans la gare de Main Street du Disneyland RailRoad, les vitraux représentent les lands de Disneyland Paris. On y trouve aussi les initiales EDRR pour Euro Disneyland RailRoad, l'ancien nom de l'attraction."
+        "detail": "Dans la gare de Main Street du Disneyland Railroad, les vitraux illustrent les différents lands de Disneyland Paris. On y aperçoit également les initiales EDRR, qui faisaient référence à l'ancien nom de l'attraction : Euro Disneyland Railroad."
     },
     {
-        "name": "La ville qui a inspiré Main Street et l'évolution des lampadaires",
+        "name": "La ville qui a servi de source d'inspiration pour Main Street et l'évolution des lampadaires",
         "latitude": 48.871328,
         "longitude": 2.778442,
         "type": "secret_main_street",
-        "detail": "Main Street U.S.A est inspirée de la ville de Marceline où a vécu Walt Disney. L'évolution des lampadaires à gaz vers des lampadaires électriques montre l'avancée dans le temps, entre 1890 et 1920."
+        "detail": "Main Street U.S.A s'inspire de la ville de Marceline, où Walt Disney a grandi. L'évolution des lampadaires, passant du gaz à l'électricité, illustre le progrès technologique entre 1890 et 1920."
     },
     {
-        "name": "L'effet acoustique de Harrington's",
+        "name": "L'effet acoustique de la boutique Harrington's",
         "latitude": 48.871921,
         "longitude": 2.777856,
         "type": "secret_main_street",
-        "detail": "Lorsque tu te places sur une marque au sol à Harrington's, tu entends une personne de l'autre côté de la caisse comme si elle était juste à côté."
+        "image": "harrigtons.png",
+        "detail": "En se tenant sur une marque au sol à Harrington's, on a l'impression d'entendre une personne de l'autre côté de la caisse comme si elle se trouvait juste à côté."
     },
     {
-        "name": "Les bruits étranges sur Main Street",
+        "name": "Les sons insolites de Main Street",
         "latitude": 48.872191,
         "longitude": 2.777798,
         "type": "secret_main_street",
-        "detail": "Sur Main Street, tu peux entendre divers sons comme un élève jouant du piano ou un chien aboyant près du Victoria's Home Style Restaurant."
+        "detail": "Sur Main Street, différents bruits peuvent être entendus, comme celui d'un élève jouant du piano ou d'un chien aboyant près du Victoria's Home Style Restaurant."
     },
     {
-        "name": "Les rails dans la boutique Emporium",
+        "name": "Les rails à l'intérieur de la boutique Emporium.",
         "latitude": 48.871298,
         "longitude": 2.778362,
         "type": "secret_main_street",
-        "detail": "À l'intérieur de la boutique Emporium, tu peux voir des rails au plafond, un vestige des systèmes utilisés au 19ème siècle pour faire passer l'argent des caisses."
+        "image": "harrigtons.png",
+        "detail": "À l'intérieur de la boutique Emporium, des rails sont visibles au plafond, rappelant les systèmes utilisés au 19e siècle pour faire circuler l'argent des caisses."
     },
     {
-        "name": "Walt Disney et sa femme Lily à côté à Disneyland Paris",
+        "name": "Walt Disney et sa femme Lillian, représentés ensemble à Disneyland Paris",
         "latitude": 48.871777,
         "longitude": 2.777702,
         "type": "secret_main_street",
-        "detail": "La boutique Lilly's Boutique est une référence à la femme de Walt Disney, Lillian, et se trouve près du restaurant Walt's – An American Restaurant."
+        "image": "lillys.png",
+        "detail": "Lilly's Boutique rend hommage à Lillian, l'épouse de Walt Disney, et se situe à proximité du restaurant Walt's - An American Restaurant"
     },
     {
-        "name": "Main Street est un immense trompe-l'oeil",
+        "name": "Main Street est un vaste trompe-l'œil",
         "latitude": 48.871308,
         "longitude": 2.778471,
         "type": "secret_main_street",
-        "detail": "Les bâtiments de Main Street sont plus petits qu'ils en ont l'air, avec des fenêtres de plus en plus petites à mesure qu'on monte les étages."
+        "detail": "Les bâtiments de Main Street paraissent plus grands qu'ils ne le sont réellement, avec des fenêtres de plus en plus petites à mesure que l'on monte les étages."
     },
     {
         "name": "Le barbier de Main Street",
         "latitude": 48.871499,
         "longitude": 2.777705,
         "type": "secret_main_street",
-        "detail": "Dapper Dan's Hair Cuts, un barbier sur Main Street, est un clin d'œil à l'époque des petites villes américaines. Il est également décoré avec des tasses utilisées par les clients."
+        "image": "dd__hair_cuts.png",
+        "detail": "Dapper Dan's Hair Cuts, un salon de coiffure/barbier situé sur Main Street, fait référence à l'époque des petites villes américaines. Il est également décoré avec des tasses utilisées par les clients."
     },
     {
         "name": "La couleur du château",
         "latitude": 48.873109,
         "longitude": 2.776123,
         "type": "secret_main_street",
-        "detail": "Le château de la Belle au Bois Dormant est peint en rose pâle pour contraster avec le ciel gris de Marne-la-Vallée et refléter la lumière."
+        "detail": "Le château de la Belle au Bois Dormant est peint en rose pâle afin de contraster avec le ciel souvent gris de Marne-la-Vallée et de mieux refléter la lumière."
     },
     {
-        "name": "Les escargots sur le château",
+        "name": "Les escargots présents sur le château",
         "latitude": 48.873101,
         "longitude": 2.776107,
         "type": "secret_main_street",
-        "detail": "Les boules dorées sur les tours du château sont en réalité des escargots, un hommage à la gastronomie française."
+        "image": "snail.png",
+        "detail": "Les boules dorées ornant les tours du château sont en réalité des escargots, un clin d'œil à la gastronomie française."
     },
     {
         "name": "La forme du château",
         "latitude": 48.873119,
         "longitude": 2.776143,
         "type": "secret_main_street",
-        "detail": "Le château est inspiré à la fois du conte de la Belle au Bois Dormant et de monuments historiques français comme le Mont Saint-Michel."
+        "detail": "Le château s'inspire à la fois du conte de la Belle au Bois Dormant et de monuments historiques français, tels que le Mont Saint-Michel."
     },
     {
         "name": "Le dragon sous le château",
         "latitude": 48.872884,
         "longitude": 2.775977,
         "type": "secret_main_street",
-        "detail": "Sous le château se trouve un passage secret menant à la tanière d'un dragon. Ce dragon serait capturé par Merlin l'Enchanteur ou pourrait être une référence à Maléfique."
+        "image": "dragon.png",
+        "detail": "Sous le château, un passage secret mène à la tanière d'un dragon. Cette créature aurait été capturée par Merlin l'Enchanteur ou faire référence à Maléfique."
     },
     {
         "name": "L'orientation du château",
         "latitude": 48.873098,
         "longitude": 2.776137,
         "type": "secret_main_street",
-        "detail": "Le château est orienté vers le nord pour éviter les contre-jours et permettre aux visiteurs de prendre de belles photos tout au long de la journée."
+        "detail": "Le château est orienté vers le nord afin d'éviter les contre-jours et permettre aux visiteurs de capturer de belles photos tout au long de la journée."
     },
     {
-        "name": "La salle cachée de Liberty Arcade",
+        "name": "La pièce secrète de Liberty Arcade",
         "latitude": 48.871513,
         "longitude": 2.777597,
         "type": "secret_main_street",
-        "detail": "Dans Liberty Arcade, un passage caché mène à une salle où tu peux assister à l'inauguration de la Statue de la Liberté."
+        "image": "liberty.png",
+        "detail": "Dans Liberty Arcade, un passage dissimulé conduit à une salle où l'on peut assister à la reconstitution de l'inauguration de la Statue de la Liberté."
     },
     {
-        "name": "Les artistes cachés à Disneyland Paris",
+        "name": "Les artistes dissimulés à Disneyland Paris",
         "latitude": 48.87147,
         "longitude": 2.778255,
         "type": "secret_main_street",
-        "detail": "Parfois, des Cast-members créent des dessins étonnants sur le sol avec des outils de nettoyage, montrant leur talent artistique."
+        "detail": "Parfois, des Cast-members réalisent de superbes dessins sur le sol à l'aide de leurs outils de nettoyage, dévoilant ainsi leur talent artistique."
     },
     {
-        "name": "Le garde qui ronfle dans le château",
+        "name": "Le garde ronflant dans le château",
         "latitude": 48.873182,
         "longitude": 2.776047,
         "type": "secret_main_street",
-        "detail": "Un garde au château de la Belle au Bois Dormant ronfle quand tu t'approches de lui, un détail humoristique pour les visiteurs."
+        "detail": "Dans le château de la Belle au Bois Dormant, un garde endormi se met à ronfler lorsque l'on s'en approche, ajoutant une touche humoristique pour les visiteurs."
     },
     {
         "name": "L'illusion d'optique du vitrail du château",
         "latitude": 48.873168,
         "longitude": 2.776092,
         "type": "secret_main_street",
-        "detail": "En te déplaçant devant le grand vitrail du château, tu verras apparaître soit une rose, soit des colombes, symbolisant innocence et beauté."
+        "image": "stained_glass_castle.png",
+        "detail": "En te déplaçant devant le grand vitrail du château, tu observeras alternativement une rose ou des colombes, symbolisant l'innocence et la beauté."
     },
     {
         "name": "Des passages secrets",
         "latitude": 48.871805,
         "longitude": 2.777038,
         "type": "secret_main_street",
-        "detail": "Il existe des passages peu fréquentés entre Liberty Arcade et Frontierland, et entre Adventureland et Frontierland, pour gagner du temps sur le parc."
+        "image": "secret_passage.png",
+        "detail": "Il y a des passages moins fréquentés entre Liberty Arcade et Frontierland, ainsi qu'entre Adventureland et Frontierland, qui permettent de gagner du temps en traversant le parc."
     },
     {
-        "name": "Les personnages cachés sur le plan numérique de Disneyland Paris",
+        "name": "Les personnages dissimulés sur le plan numérique de Disneyland Paris",
         "latitude": 48.872613,
         "longitude": 2.776766,
         "type": "secret_main_street",
-        "detail": "Sur le plan numérique de Disneyland Paris, des personnages comme Minnie et un Stormtrooper sont cachés à différents endroits."
+        "detail": "Sur le plan numérique de Disneyland Paris, des personnages tels que Minnie et un Stormtrooper sont dissimulés à divers endroits. Les trouverez-vous ?"
     },
 
     {
@@ -152,183 +162,196 @@
         "latitude": 48.871634,
         "longitude": 2.775251,
         "type": "secret_frontierland",
-        "detail": "Le tracteur en face de l'entrée de Big Thunder Mountain à Disneyland Paris est un vrai tracteur, acheté à un fermier américain. Ce fermier a utilisé l'argent de la vente pour acheter une bague à sa femme, faute de moyens lors de leur mariage."
+        "image": "tractor.png",
+        "detail": "Le tracteur situé en face de l'entrée de Big Thunder Mountain à Disneyland Paris est un véritable tracteur, acheté à un fermier américain. Ce dernier a utilisé l'argent de la vente pour acheter une bague à sa femme, n'ayant pas les moyens de le faire lors de leur mariage."
     },
     {
-        "name": "Les 3 restaurants de Frontierland",
+        "name": "Les trois restaurants de Frontierland",
         "latitude": 48.8715,
         "longitude": 2.776686,
         "type": "secret_frontierland",
-        "detail": "Les restaurants de Frontierland sont inspirés par la ruée vers l'or : le cuivre pour le Last Chance Cafe, l'argent pour le Silver Spur Steakhouse et l'or pour The Lucky Nugget."
+        "detail": "Les restaurants de Frontierland sont inspirés par la ruée vers l'or : le Last Chance Cafe représente le cuivre, le Silver Spur Steakhouse l'argent, et The Lucky Nugget l'or."
     },
     {
         "name": "La chaîne alimentaire",
         "latitude": 48.870239,
         "longitude": 2.776359,
         "type": "secret_frontierland",
-        "detail": "À la sortie de Phantom Manor, dans Boot Hill, quatre tombes représentent une chaîne alimentaire : l'écureuil mangé par le fauve, le fauve mangé par l'homme, et ainsi de suite, jusqu'à l'ours qui vit 20 ans de plus."
+        "image": "food_chain.png",
+        "detail": "À la sortie de Phantom Manor, dans Boot Hill, quatre tombes illustrent une chaîne alimentaire : l'écureuil dévoré par le fauve, le fauve mangé par l'homme, et ainsi de suite, jusqu'à l'ours qui vit 20 ans de plus."
     },
     {
-        "name": "Un message inquiétant sur une vitre de Phantom Manor",
+        "name": "Un message mystérieux sur une vitre de Phantom Manor",
         "latitude": 48.870702,
         "longitude": 2.777216,
         "type": "secret_frontierland",
-        "detail": "Dans la file d'attente de Phantom Manor, regarde la première fenêtre et tu verras un message écrit sur la vitre : “Help Me”, soit “aidez-moi”."
+        "detail": "Dans la file d'attente de Phantom Manor, observe la première fenêtre où un message inquiétant est écrit sur la vitre : “Help Me” (aidez-moi)."
     },
     {
-        "name": "Une tombe qui fait du bruit",
+        "name": "Une tombe bruyante",
         "latitude": 48.870138,
         "longitude": 2.776323,
         "type": "secret_frontierland",
-        "detail": "Dans le cimetière de Boot Hill, une grande tombe émet un bruit étrange : battement de cœur ou tapotement inquiétant. Personne ne sait d'où vient ce bruit."
+        "detail": "Dans le cimetière de Boot Hill, une grande tombe émet un bruit étrange, semblable à un battement de cœur ou un tapotement inquiétant. Personne ne sait d'où provient ce son… Essayez de la trouver si vous avez le courage !"
     },
     {
         "name": "Une tombe dans l'eau",
         "latitude": 48.870093,
         "longitude": 2.77611,
         "type": "secret_frontierland",
-        "detail": "À bord du Thunder Mesa Riverboat Landing, une tombe cassée émerge de l'eau près du cimetière de Boot Hill. Son origine reste mystérieuse."
+        "detail": "À bord du Thunder Mesa Riverboat Landing, une tombe brisée émerge de l'eau près du cimetière de Boot Hill. Son origine demeure un mystère…"
     },
     {
         "name": "Un squelette de dinosaure",
         "latitude": 48.869782,
         "longitude": 2.776184,
         "type": "secret_frontierland",
-        "detail": "Lors du tour du Thunder Mesa Riverboat Landing, un squelette de dinosaure, un T-Rex piégé dans la roche, est visible. Il aurait été surpris par une coulée de lave des millions d'années auparavant."
+        "detail": "Lors du tour du Thunder Mesa Riverboat Landing, un squelette de dinosaure, un T-Rex figé dans la roche, est visible. Il aurait été surpris par une coulée de lave des millions d'années auparavant... Essayez de le repérer pendant votre navigation "
     },
     {
         "name": "Une inscription inquiétante sur le portail de Phantom Manor",
         "latitude": 48.871049,
         "longitude": 2.776778,
         "type": "secret_frontierland",
-        "detail": "À l'entrée du Phantom Manor, sur la plaque du portail, tu pourras lire l'inscription latine : 'Non Omnis Moriar', signifiant 'Vous n'en mourrez pas complètement'."
+        "detail": "À l'entrée du Phantom Manor, sur la plaque du portail, vous pourrez lire l'inscription latine : 'Non Omnis Moriar', signifiant 'Vous ne mourrez pas complètement'..."
     },
     {
         "name": "L'apparition du Phantom et de la mariée à Phantom Manor",
         "latitude": 48.870497,
         "longitude": 2.776747,
         "type": "secret_frontierland",
-        "detail": "Depuis le cimetière de Phantom Manor, observe la fenêtre de gauche : le Phantom apparaît de temps en temps. Depuis la fenêtre centrale, tu pourras voir la mariée attendant son mariage manqué."
+        "detail": "Depuis le cimetière de Phantom Manor, observez la fenêtre de gauche : le Phantom y apparaît de temps en temps. Depuis la fenêtre centrale, vous pourrez voir la mariée, attendant son mariage manqué… Ne la regardez pas trop longtemps..."
     },
     {
         "name": "Une lumière étrange la nuit à Disneyland Paris",
         "latitude": 48.870589,
         "longitude": 2.776812,
         "type": "secret_frontierland",
-        "detail": "La nuit, devant Phantom Manor, une petite lumière étrange apparaît au premier étage, comme si quelqu'un vivait encore dans le manoir abandonné."
+        "detail": "La nuit, devant Phantom Manor, une petite lumière étrange apparaît au premier étage, comme si quelqu'un vivait encore dans le manoir abandonné… Ne vous y attardez pas trop longtemps, car vous ne serez jamais sûrs de ce que vous y voyez."
     },
     {
         "name": "Une ombre sur le tableau de Mélanie Ravenswood",
         "latitude": 48.870584,
         "longitude": 2.77685,
         "type": "secret_frontierland",
-        "detail": "Dans la file d'attente de Phantom Manor, observe bien le tableau de Mélanie Ravenswood. Une silhouette inquiétante du Phantom apparaît dans le coin supérieur droit."
+        "image": "ravenswood.png",
+        "detail": "Dans la file d'attente de Phantom Manor, observez attentivement le tableau de Mélanie Ravenswood. Une silhouette inquiétante du Phantom apparaît discrètement dans le coin supérieur droit… Une présence qui semble vous épier."
     },
     {
         "name": "Des mineurs dans un puits",
         "latitude": 48.871649,
         "longitude": 2.776031,
         "type": "secret_frontierland",
-        "detail": "Près de Big Thunder Mountain, un puits dans Frontierland émet des bruits de pioches, provenant des mineurs qui semblent toujours travailler à l'intérieur de la mine."
+        "image": "well.png",
+        "detail": "Près de Big Thunder Mountain, un puits dans Frontierland émet des bruits de pioches, comme si des mineurs travaillaient encore à l'intérieur de la mine… Un son étrange qui rappelle qu'ils ne sont jamais vraiment partis."
     },
     {
-        "name": "La taverne de l'oiseau Tonnerre dans Big Thunder Mountain",
+        "name": "Big Thunder Mountain : la taverne de l'oiseau Tonnerre",
         "latitude": 48.870692,
         "longitude": 2.775596,
         "type": "secret_frontierland",
-        "detail": "Lors de la dernière montée de Big Thunder Mountain, regarde bien à droite pour voir une grotte gravée de l'image d'un oiseau, le légendaire oiseau tonnerre."
-    },
-    {
-        "name": "Les chaises du Cowboy Cookout Barbecue",
-        "latitude": 48.870989,
-        "longitude": 2.773149,
-        "type": "secret_frontierland",
-        "detail": "Au Cowboy Cookout Barbecue, chaque chaise est différente. Cela fait référence au Far West, où les cow-boys apportaient leurs propres chaises lorsqu'ils mangeaient sur place."
+        "image": "thunder_bird.png",
+        "detail": "Lors de la dernière montée de Big Thunder Mountain, regardez bien à droite pour apercevoir une grotte gravée de l'image d'un oiseau, le légendaire oiseau tonnerre, dont la légende plane sur toute la montagne."
     },
     {
         "name": "Une mine pour bébé",
         "latitude": 48.871254,
         "longitude": 2.774586,
         "type": "secret_frontierland",
+        "image": "baby_mine.png",
         "detail": "Dans la file d'attente des Disney Premier Access de Big Thunder Mountain, tu peux apercevoir une petite mine avec un petit wagon et l'inscription 'Baby Doe Mine'."
+    },
+    {
+        "name": "Les chaises du Cowboy Cookout Barbecue",
+        "latitude": 48.870989,
+        "longitude": 2.773149,
+        "type": "secret_frontierland",
+        "detail": "Au Cowboy Cookout Barbecue, chaque chaise est unique, en référence au Far West, où les cow-boys apportaient souvent leurs propres chaises lorsqu'ils mangeaient en extérieur."
     },
     {
         "name": "Un lieu caché en plein Frontierland",
         "latitude": 48.871437,
         "longitude": 2.77568,
         "type": "secret_frontierland",
-        "detail": "Il existe un lieu caché dans Frontierland, près du Rustler Roundup Shootin' Gallery. C'est un petit passage qui mène à une passerelle avec une vue imprenable sur Big Thunder Mountain et Phantom Manor, idéal pour des photos uniques."
+        "detail": "Il existe un lieu secret dans Frontierland, près du Rustler Roundup Shootin' Gallery. Un petit passage mène à une passerelle offrant une vue imprenable sur Big Thunder Mountain et Phantom Manor, un endroit parfait pour capturer des photos uniques."
     },
 
     {
-        "name": "L'oeuf géant à l'entrée d'Adventureland",
+        "name": "L'oeuf gigantesque à l'entrée d'Adventureland",
         "latitude": 48.872603,
         "longitude": 2.77554,
         "type": "secret_adventureland",
-        "detail": "L'œuf géant à l'entrée d'Adventureland est une référence à l'histoire de Sinbad le marin. L'œuf évoque l'histoire de Sinbad capturé par un oiseau géant, un Rokh, et retrouvé dans son nid tapissé de diamants."
+        "image": "egg.png",
+        "detail": "L'œuf géant à l'entrée d'Adventureland fait référence à l'histoire de Sinbad le marin. Il évoque le moment où Sinbad est capturé par un oiseau géant, le Rokh, et retrouvé dans son nid, tapissé de diamants."
     },
     {
         "name": "Le lustre à l'entrée d'Adventureland",
         "latitude": 48.872605,
         "longitude": 2.775467,
         "type": "secret_adventureland",
-        "detail": "Le lustre à l'entrée d'Adventureland a été offert par le roi du Maroc Hassan II, actionnaire d'Euro Disney. Un banc a été installé sous celui-ci pour éviter que des camions ne l'endommagent."
+        "image": "chandelier.png",
+        "detail": "Le lustre à l'entrée d'Adventureland a été offert par le roi du Maroc, Hassan II, actionnaire d'Euro Disney. Un banc a été placé sous celui-ci pour le protéger des éventuels dommages causés par les camions."
     },
     {
         "name": "Indiana Jones est toujours présent dans son attraction",
         "latitude": 48.872401,
         "longitude": 2.772128,
         "type": "secret_adventureland",
-        "detail": "Dans la file d'attente de l'attraction Indiana Jones et le Temple du Péril, on peut trouver des objets personnels d'Indiana Jones, tels que sa tente avec son chapeau et son fouet."
+        "image": "indiana_jones.png",
+        "detail": "Dans la file d'attente de l'attraction Indiana Jones et le Temple du Péril, vous pouvez découvrir des objets personnels d'Indiana Jones, comme sa tente, son chapeau et son fouet, laissés en souvenir de ses aventures."
     },
     {
-        "name": "Les personnages de Pirates des Caraïbes recherchés",
+        "name": "Les personnages recherchés dans Pirates des Caraïbes",
         "latitude": 48.873314,
         "longitude": 2.772983,
         "type": "secret_adventureland",
-        "detail": "Dans le restaurant Captain Jack's de Pirates des Caraïbes, tu peux voir des avis de recherche pour Jack Sparrow, Davy Jones, Barbossa et Barbe Noire."
+        "image": "wanted_pirates.png",
+        "detail": "Dans le restaurant Captain Jack's de Pirates des Caraïbes, vous pouvez observer des avis de recherche pour Jack Sparrow, Davy Jones, Barbossa et Barbe Noire, les célèbres pirates recherchés."
     },
     {
         "name": "Les films Pirates des Caraïbes après l'attraction",
         "latitude": 48.873415,
         "longitude": 2.773442,
         "type": "secret_adventureland",
-        "detail": "Contrairement à la plupart des attractions Disney inspirées de films, Pirates des Caraïbes a inspiré la saga cinématographique, et non l'inverse."
+        "detail": "Contrairement à la plupart des attractions Disney basées sur des films, Pirates des Caraïbes a été à l'origine de la saga cinématographique, et non l'inverse."
     },
     {
         "name": "La caisse Coca-Cola",
         "latitude": 48.871995,
         "longitude": 2.774124,
         "type": "secret_adventureland",
-        "detail": "Près du restaurant Hakuna Matata, une caisse Coca-Cola à Cool Post émet un bruit d'ouverture lorsque tu l'ouvres, un petit détail amusant de Disneyland Paris."
+        "image": "coca.png",
+        "detail": "Près du restaurant Hakuna Matata, une caisse Coca-Cola à Cool Post émet un bruit d'ouverture lorsqu'on l'ouvre, un petit détail amusant et surprenant de Disneyland Paris."
     },
     {
         "name": "La tarentule d'Adventureland",
         "latitude": 48.871814,
         "longitude": 2.773835,
         "type": "secret_adventureland",
-        "detail": "À Adventureland, près de Pizza Outpost, tu peux trouver une cage contenant une énorme tarentule, un petit détail effrayant pour les visiteurs."
+        "image": "tarentule.png",
+        "detail": "À Adventureland, près de Pizza Outpost, une cage contenant une énorme tarentule est visible, un petit détail effrayant qui surprend les visiteurs."
     },
     {
         "name": "Une girafe dans une boutique",
         "latitude": 48.872499,
         "longitude": 2.775051,
         "type": "secret_adventureland",
-        "detail": "Dans la boutique 'La girafe curieuse' à l'entrée d'Adventureland, regarde bien le plafond pour voir une girafe qui a sa tête à l'intérieur de la boutique, en train de manger."
+        "image": "girafe.png",
+        "detail": "Dans la boutique 'La Girafe Curieuse' à l'entrée d'Adventureland, regardez bien le plafond : vous y apercevrez une girafe, dont la tête est à l'intérieur de la boutique, en train de manger."
     },
     {
         "name": "Une pancarte spéciale dans Pirates des Caraïbes",
         "latitude": 48.873682,
         "longitude": 2.773143,
         "type": "secret_adventureland",
-        "detail": "Après avoir traversé les geôles du fort espagnol dans Pirates des Caraïbes, un panneau 'Pirates Ye Be Warned' fait référence à la première apparition de Jack Sparrow dans le film."
+        "detail": "Après avoir traversé les geôles du fort espagnol dans Pirates des Caraïbes, un panneau 'Pirates Ye Be Warned' fait référence à la première apparition de Jack Sparrow dans le film. Essayez de le trouver lors de votre passage !"
     },
     {
         "name": "Le trésor de Disneyland Paris",
         "latitude": 48.872867,
         "longitude": 2.773195,
         "type": "secret_adventureland",
-        "detail": "Le trésor caché de Disneyland Paris se trouve dans les labyrinthes souterrains d'Adventure Isle. Le plus sombre d'entre eux, 'Davy Jones Locker', mène à un trésor caché, avec des squelettes et des orgues effrayants."
+        "detail": "Le trésor caché de Disneyland Paris se trouve dans les labyrinthes souterrains d'Adventure Isle. Le plus sombre d'entre eux, 'Davy Jones Locker', mène à un trésor dissimulé, entouré de squelettes et d'orgues effrayants. Osez-vous y aventurer ?"
     },
 
     {
@@ -336,28 +359,30 @@
         "latitude": 48.873484,
         "longitude": 2.775372,
         "type": "secret_fantasyland",
-        "detail": "Si tu regardes à la fenêtre au-dessus de l'entrée de l'attraction 'Blanche-Neige et les 7 nains', tu verras de temps en temps la méchante reine de Blanche-Neige observer les visiteurs."
+        "image": "snow_white.png",
+        "detail": "Si vous regardez par la fenêtre au-dessus de l'entrée de l'attraction 'Blanche-Neige et les 7 nains', vous apercevrez de temps en temps la méchante reine de Blanche-Neige, observant les visiteurs d'un regard perçant."
     },
     {
-        "name": "La pizzeria Bella Notte est penchée en référence à la Tour de Pise",
+        "name": "La pizzeria Bella Notte, semblable à la Tour de Pise",
         "latitude": 48.874298,
         "longitude": 2.776439,
         "type": "secret_fantasyland",
-        "detail": "La pizzeria Bella Notte dans Fantasyland est construite de manière à ressembler à la Tour de Pise, avec un bâtiment qui semble penché, dans ce petit coin Italien de Disneyland Paris."
+        "image": "pizzeria.png",
+        "detail": "La pizzeria Bella Notte dans Fantasyland est construite pour ressembler à la Tour de Pise, avec un bâtiment inclinant légèrement, créant ainsi un petit coin italien charmant au cœur de Disneyland Paris."
     },
     {
         "name": "Le sol intriguant de Bella Notte",
         "latitude": 48.874245,
         "longitude": 2.776326,
         "type": "secret_fantasyland",
-        "detail": "Le sol de la pizzeria Bella Notte est composé de mosaïques provenant d'une fresque de l'attraction Adventure Thru Inner Space, ouverte en 1967 à Disneyland Californie, et utilisée pour créer cette terrasse."
+        "detail": "Le sol de la pizzeria Bella Notte est composé de mosaïques issues d'une fresque de l'attraction Adventure Thru Inner Space, ouverte en 1967 à Disneyland Californie, et qui a été réutilisée pour créer cette terrasse."
     },
     {
         "name": "Un secret invisible",
         "latitude": 48.87465,
         "longitude": 2.774338,
         "type": "secret_fantasyland",
-        "detail": "Dans le labyrinthe d'Alice aux Pays des Merveilles, les allées forment le corps du Chat de Cheshire. Si tu observes depuis le ciel, tu pourras voir que le labyrinthe représente sa forme !"
+        "detail": "Dans le labyrinthe d'Alice aux Pays des Merveilles, les allées forment le corps du Chat de Cheshire. Si vous observez depuis le ciel, vous pourrez voir que le labyrinthe prend la forme de ce célèbre personnage !"
     },
 
     {
@@ -365,175 +390,181 @@
         "latitude": 48.873459,
         "longitude": 2.777819,
         "type": "secret_discoveryland",
-        "detail": "Pour obtenir le score maximum de 999 999 dans l'attraction Buzz Lightyear Laser Blast, il faut viser les cibles rondes (100 points), carrées (1000 points), losanges (5000 points) et triangulaires (10 000 points). Ensuite, vise Zurg sous son médaillon pour 50 000 points supplémentaires."
+        "detail": "Pour obtenir le score maximum de 999 999 dans l'attraction Buzz Lightyear Laser Blast, il faut viser Zurg sous son médaillon pour ajouter 50 000 points supplémentaires à votre score… Une bonne astuce de tricheur, mais ne le dites à personne !"
     },
     {
         "name": "Le départ de Space Mountain - un lancement vers l'espace",
         "latitude": 48.874082,
         "longitude": 2.779151,
         "type": "secret_discoveryland",
-        "detail": "Space Mountain s'inspire des idées de Jules Verne, qui pensait que des canons pourraient envoyer des hommes sur la Lune. Le canon de l'attraction est une référence à cette idée futuriste de l'époque."
+        "detail": "Space Mountain s'inspire des idées de Jules Verne, qui imaginait que des canons pourraient envoyer des hommes sur la Lune. Le canon de l'attraction est une référence à cette idée futuriste, typique de l'époque de Verne."
     },
     {
         "name": "Le mécanisme de lancement de Space Mountain",
         "latitude": 48.87422,
         "longitude": 2.779494,
         "type": "secret_discoveryland",
-        "detail": "Le lancement de Space Mountain utilise le même principe que les catapultes sur les porte-avions, propulsant les visiteurs à plus de 70 km/h en moins de 2 secondes, avec une force de 1,3G."
+        "detail": "Le lancement de Space Mountain utilise le même principe que les catapultes sur les porte-avions, propulsant les visiteurs à plus de 70 km/h en moins de 2 secondes, avec une force de 1,3G, pour une montée d'adrénaline instantanée."
     },
     {
         "name": "Un droïde bien connu dans Star Tours",
         "latitude": 48.874658,
         "longitude": 2.778732,
         "type": "secret_discoveryland",
-        "detail": "Dans la file d'attente de Star Tours, tu peux voir Rex, le droïde qui était le pilote de la première version de l'attraction, dans sa boîte d'origine avec quelques soucis techniques."
+        "image": "rex.png",
+        "detail": "Dans la file d'attente de Star Tours, vous pouvez voir Rex, le droïde qui était le pilote de la première version de l'attraction, toujours dans sa boîte d'origine, avec quelques soucis techniques qui rappellent ses anciens déboires en tant que pilote."
     },
     {
         "name": "Une fresque cachée",
         "latitude": 48.873279,
         "longitude": 2.777817,
         "type": "secret_discoveryland",
-        "detail": "À l'entrée de Discoveryland, près de la boutique Constellations, une gravure montre plusieurs véhicules emblématiques comme le StarSpeeder de Star Tours, le Nautilus, et une voiture d'Autopia."
+        "image": "fresque.png",
+        "detail": "À l'entrée de Discoveryland, près de la boutique Constellations, une gravure montre plusieurs véhicules emblématiques, tels que le StarSpeeder de Star Tours, le Nautilus et une voiture d'Autopia, un clin d'œil aux attractions et aventures de Discoveryland."
     },
     {
         "name": "Un Mickey Caché dans Star Tours",
         "latitude": 48.874683,
         "longitude": 2.778661,
         "type": "secret_discoveryland",
-        "detail": "Dans la file d'attente de Star Tours, regarde bien l'écran de la salle des bagages où R2-D2 se transforme parfois en Mickey Caché."
+        "detail": "Dans la file d'attente de Star Tours, regardez bien l'écran de la salle des bagages, où R2-D2 se transforme parfois en Mickey Caché. Prenez le temps de le trouver lors de votre passage !."
     },
     {
         "name": "Une blague cachée dans Space Mountain",
         "latitude": 48.873797,
         "longitude": 2.779175,
         "type": "secret_discoveryland",
-        "detail": "Avant l'embarquement de Space Mountain, tu peux voir la phrase latine 'Ad Luna In Flamma Gloria'. Si tu te retournes sur le quai, tu verras un panneau avec une variante humoristique : 'Ad Luna in Flatula Gloria', une blague des Imagineers."
+        "image": "joke.png",
+        "detail": "Avant l'embarquement de Space Mountain, vous pouvez voir la phrase latine 'Ad Luna In Flamma Gloria'. Si vous vous retournez sur le quai, vous remarquerez un panneau avec une variante humoristique : 'Ad Luna in Flatula Gloria', une blague des Imagineers qui joue sur les mots."
     },
     {
-        "name": "Les ruines d'un projet fou dans Discoveryland",
+        "name": "Un projet fou en ruine dans Discoveryland",
         "latitude": 48.873914,
         "longitude": 2.77814,
         "type": "secret_discoveryland",
-        "detail": "Les deux grands cercles sur le café Hyperion étaient censés être des tunnels reliant ce café à un grand projet d'attraction appelé Discovery Mountain, un concept abandonné."
+        "image": "ruined_project.png",
+        "detail": "Les deux grands cercles sur le café Hyperion étaient initialement censés être des tunnels reliant ce café à un grand projet d'attraction appelé Discovery Mountain, un concept qui a finalement été abandonné."
     },
     {
         "name": "Les étoiles au plafond de Space Mountain",
         "latitude": 48.873911,
         "longitude": 2.779205,
         "type": "secret_discoveryland",
-        "detail": "Les étoiles visibles au plafond avant l'embarquement de Space Mountain sont des hommages aux Imagineers, comme TD 748 pour Tim Delaney, directeur artistique de Discoveryland."
+        "detail": "Les étoiles visibles au plafond avant l'embarquement de Space Mountain sont des hommages aux Imagineers, comme TD 748, qui fait référence à Tim Delaney, le directeur artistique de Discoveryland. Un clin d'œil subtil à ceux qui ont contribué à la création de l'attraction."
     },
     {
-        "name": "Space Mountain devait être plus rapide",
+        "name": "Space Mountain devait être initialement plus rapide",
         "latitude": 48.874025,
         "longitude": 2.779402,
         "type": "secret_discoveryland",
-        "detail": "À l'origine, Space Mountain devait inclure un air time simulant l'apesanteur, mais la vitesse de l'attraction a été réduite pour rendre l'expérience moins intense."
+        "detail": "Au départ, Space Mountain devait offrir un air time simulant l'apesanteur, mais la vitesse a été diminuée pour rendre l'expérience plus douce."
     },
 
     {
-        "name": "La Tour de la Terreur : 2 ascenseurs dans la même cage & les ascenseurs ne tombent pas",
+        "name": "La Tour de la Terreur utilise deux ascenseurs dans la même cage",
         "latitude": 48.866599,
         "longitude": 2.778839,
         "type": "secret_studios",
-        "detail": "Les ascenseurs de la Tour de la Terreur peuvent se trouver dans la même cage, l'un montant tandis que l'autre descend. De plus, ils ne tombent pas, mais sont tirés vers le bas par un câble, donnant la sensation de voler."
+        "detail": "Les ascenseurs de la Tour de la Terreur peuvent se trouver dans la même cage, l'un montant tandis que l'autre descend. De plus, ils ne tombent pas réellement, mais sont tirés vers le bas par un câble, créant ainsi la sensation de voler."
     },
     {
-        "name": "La Tour de la Terreur : 5000 objets dans les décors et leur inspiration",
+        "name": "La Tour de la Terreur : 5000 objets dans les décors",
         "latitude": 48.866699,
         "longitude": 2.778839,
         "type": "secret_studios",
-        "detail": "La Tour de la Terreur abrite plus de 5000 objets décoratifs, avec des références à la série 'La Quatrième Dimension' qui ont inspiré les Imagineers."
+        "detail": "La Tour de la Terreur abrite plus de 5000 objets décoratifs, dont de nombreuses références à la série La Quatrième Dimension, qui ont inspiré les Imagineers dans la conception de l'attraction."
     },
     {
         "name": "La Tour de la Terreur : Une écriture qui disparaît",
         "latitude": 48.866499,
         "longitude": 2.778849,
         "type": "secret_studios",
-        "detail": "En face de la Tour de la Terreur, tu peux voir apparaître mystérieusement 'The Twilight Zone Tower of Terror' sur un panneau initialement marqué 'The Hollywood Tower Hotel'."
+        "image": "hollywood_tower.png",
+        "detail": "En face de la Tour de la Terreur, tu peux voir apparaître mystérieusement 'The Twilight Zone Tower of Terror' sur un panneau qui était initialement marqué 'The Hollywood Tower Hotel'.."
     },
     {
         "name": "La Tour de la Terreur : Un cercle de craie étrange",
         "latitude": 48.866459,
         "longitude": 2.778649,
         "type": "secret_studios",
-        "detail": "Dans la salle des machines au premier étage, un cercle de craie peut révéler l'apparition de la fillette hantant l'hôtel, que l'on peut entendre si l'on s'approche."
+        "detail": "Dans la salle des machines au premier étage de la Tour de la Terreur, un cercle de craie peut révéler l'apparition de la fillette hantant l'hôtel. Si l'on s'approche, on peut même entendre son souffle."
     },
     {
-        "name": "La Tour de la Terreur : Toutes les horloges sont bloquées à 20h05 & le nom des Imagineers sur les registres",
+        "name": "La Tour de la Terreur : Les horloges bloquées à 20h05",
         "latitude": 48.866489,
         "longitude": 2.778629,
         "type": "secret_studios",
-        "detail": "Toutes les horloges sont arrêtées à 20h05, l'heure fatidique du drame. Les invités du registre sont en réalité les Imagineers ayant conçu l'attraction."
+        "detail": "Toutes les horloges sont arrêtées à 20h05, l'heure fatidique du drame. Les noms inscrits dans le registre sont en réalité ceux des Imagineers ayant conçu l'attraction."
     },
     {
         "name": "La Tour de la Terreur : un Mickey caché dans un tableau d'époque",
         "latitude": 48.866359,
         "longitude": 2.778449,
         "type": "secret_studios",
-        "detail": "Dans la boutique de la Tour de la Terreur, l'un des tableaux représentant la vie de l'époque montre une petite fille tenant une peluche Mickey."
+        "detail": "Dans la boutique de la Tour de la Terreur, l'un des tableaux représentant la vie de l'époque montre une petite fille tenant une peluche Mickey, un détail subtil qui fait écho à l'univers Disney."
     },
     {
         "name": "Réduits à la taille d'une souris dans Ratatouille",
         "latitude": 448.86748,
         "longitude": 2.776307,
         "type": "secret_studios",
-        "detail": "Dans Ratatouille : L'Aventure, tu es réduit à la taille d'un rat. En sortant de l'attraction, tu remarqueras que le sol passe de carreaux géants à des carreaux normaux, symbolisant ton retour à la taille humaine."
+        "detail": "Dans Ratatouille : L'Aventure, tu es réduit à la taille d'un rat. En sortant de l'attraction, tu remarqueras que le sol passe de carreaux géants à des carreaux normaux, symbolisant ainsi ton retour à la taille humaine."
     },
     {
         "name": "Le Camion Pizza Planet dans l'attraction Ratatouille",
         "latitude": 48.867695,
         "longitude": 2.776054,
         "type": "secret_studios",
-        "detail": "Le camion Pizza Planet, un clin d'œil récurrent dans les films Pixar, apparaît dans la scène de Ratatouille où l'on voit Rémi et Auguste Gusteau, visible à une fenêtre."
+        "detail": "Le camion Pizza Planet, une référence fréquente dans les films Pixar, fait une apparition dans Ratatouille lors de la scène où Rémi et Auguste Gusteau sont visibles à une fenêtre."
     },
     {
         "name": "Les rats cachés dans les lampadaires dans le land Ratatouille",
         "latitude": 48.867427,
         "longitude": 2.776907,
         "type": "secret_studios",
-        "detail": "Dans le land Ratatouille, des rats sont cachés à l'intérieur de certains lampadaires, un clin d'œil amusant au film."
+        "detail": "Dans le land Ratatouille, des rats sont dissimulés à l'intérieur de certains lampadaires, un clin d'œil amusant au film. Vous en avez trouvé combien ?."
     },
     {
         "name": "Nous sommes réduits à la taille de jouets dans le land Toy Story Playland",
         "latitude": 48.867334,
         "longitude": 2.777486,
         "type": "secret_studios",
-        "detail": "Dans Toy Story Playland, les visiteurs sont réduits à la taille d'un jouet, avec des éléments comme des empreintes géantes et des boîtes de jouets, donnant une impression de petite taille."
+        "image": "ball.png",
+        "detail": "Dans Toy Story Playland, les visiteurs sont réduits à la taille d'un jouet, avec des éléments tels que des empreintes géantes et des boîtes de jouets, créant ainsi une impression de petite taille."
     },
     {
         "name": "Une référence dans l'attraction Spider-Man W.E.B. Adventure",
         "latitude": 48.865995,
         "longitude": 2.778959,
         "type": "secret_studios",
-        "detail": "Dans l'attraction Spider-Man W.E.B. Adventure, la lampe à côté de Peter Parker fait référence à la lampe emblématique aperçue au début des films Pixar."
+        "detail": "Dans l'attraction Spider-Man W.E.B. Adventure, la lampe à côté de Peter Parker fait référence à la lampe emblématique que l'on aperçoit au début des films Pixar."
     },
     {
         "name": "Les références aux campus Avengers du monde entier dans Avengers Assemble : Flight Force",
         "latitude": 48.865237,
         "longitude": 2.779744,
         "type": "secret_studios",
-        "detail": "Dans la file d'attente de Flight Force, plusieurs références aux autres campus Avengers apparaissent, comme Rocket dans Guardians of the Galaxy : Mission Breakout et Miss Marvel dans les croisières Disney."
+        "detail": "Dans la file d'attente de Flight Force, plusieurs références aux autres campus Avengers apparaissent, comme Rocket de Guardians of the Galaxy : Mission Breakout et Miss Marvel, qui est présente dans les croisières Disney."
     },
     {
         "name": "Le secret disparu des Walt Disney Studios",
         "latitude": 48.86552,
         "longitude": 2.77922,
         "type": "secret_studios",
-        "detail": "À l'origine, les Walt Disney Studios devaient montrer l'envers du décor du cinéma, avec des attractions comme Rock'n Roller Coaster représentant la création du son ou Armageddon les effets spéciaux."
+        "detail": "À l'origine, les Walt Disney Studios étaient conçus pour dévoiler l'envers du décor du cinéma, avec des attractions comme Rock'n Roller Coaster, qui représentait la création du son, ou Armageddon, qui montrait les effets spéciaux."
     },
     {
         "name": "Secret disparu : Les Soundtrackers de Rock'n'Roller Coaster",
         "latitude": 48.865327,
         "longitude": 2.779526,
         "type": "secret_studios",
-        "detail": "Les trains de Rock'n'Roller Coaster étaient appelés des Soundtrackers et possédaient chacun une musique et un jeu de lumières différents, tous choisis parmi les morceaux d'Aerosmith."
+        "detail": "Les trains de Rock'n'Roller Coaster, appelés Soundtrackers, étaient équipés d'une musique et d'un jeu de lumières uniques, tous sélectionnés parmi les morceaux d'Aerosmith."
     },
     {
         "name": "Secret disparu : Un mode grande vitesse sur Rock'n'Roller Coaster",
         "latitude": 48.865274,
         "longitude": 2.779591,
         "type": "secret_studios",
-        "detail": "Un mode haute vitesse existait sur l'attraction Rock'n'Roller Coaster, faisant passer la vitesse de 90 km/h à plus de 100 km/h, disponible uniquement en début de journée ou lorsqu'un nouveau train est lancé."
+        "detail": "Un mode haute vitesse était disponible sur Rock'n'Roller Coaster, augmentant la vitesse de 90 km/h à plus de 100 km/h. Ce mode était accessible uniquement en début de journée ou lorsqu'un nouveau train était lancé."
     }
 ]
