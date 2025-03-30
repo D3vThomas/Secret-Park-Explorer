@@ -122,10 +122,13 @@ Si vous souhaitez contribuer à ce projet, voici quelques étapes simples à sui
 
 Nous apprécions toutes les contributions et suggestions !
 
+### Discussions
+
+Si vous avez des questions, des suggestions ou des idées, vous pouvez démarrer une nouvelle discussion dans notre repository GitHub.  
+Cliquez sur le lien ci-dessous pour commencer :
+
+[Start a new discussion](https://github.com/dieuthomas/App-Disney-Secret/discussions/2)
+
 ## Licence
 
 Ce projet est sous la licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-```
-
-```
