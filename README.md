@@ -35,7 +35,7 @@ Avant de commencer l'installation, assurez-vous d'avoir les éléments suivants 
 Clonez le projet en utilisant la commande suivante :
 
 ```bash
-git clone https://github.com/dieuthomas/Disney-Secret-App.git
+git clone https://github.com/D3vThomas/Disney-Secret-App.git
 cd Disney-Secret-App
 ```
 
@@ -127,7 +127,7 @@ Nous apprécions toutes les contributions et suggestions !
 Si vous avez des questions, des suggestions ou des idées, vous pouvez démarrer une nouvelle discussion dans notre repository GitHub.  
 Cliquez sur le lien ci-dessous pour commencer :
 
-[Start a new discussion](https://github.com/dieuthomas/App-Disney-Secret/discussions/2)
+[Start a new discussion](https://github.com/D3vThomas/App-Disney-Secret/discussions/2)
 
 ## Licence
 
