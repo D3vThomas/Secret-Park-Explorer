@@ -11,9 +11,9 @@
 
 ## Screenshot de l'application
 
-![Screen de l'application](assets/screenshots/screenshot.jpg)
-![Screen détail d'un point](assets/screenshots/screenshot2.jpg)
-![Screen détail d'une photo](assets/screenshots/screenshot3.jpg)
+<img src="assets/screenshots/screenshot.jpg" width="300" />
+<img src="assets/screenshots/screenshot2.jpg" width="300" />
+<img src="assets/screenshots/screenshot3.jpg" width="300" />
 
 ## Détail des fonctionnalités
 
