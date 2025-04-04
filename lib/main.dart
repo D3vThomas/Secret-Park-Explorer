@@ -178,7 +178,7 @@ class _MapScreenState extends State<MapScreen> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
-            title: Text('Carte Disney - Secrets'),
+            title: Text('Carte du parc - Secrets'),
             actions: [
                 Padding(
                     padding: const EdgeInsets.only(right: 10.0),
