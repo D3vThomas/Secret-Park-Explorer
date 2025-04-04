@@ -1,11 +1,11 @@
-# Disney-Secret-App
+# **Secret Park Explorer**
 
-**Carte Disney - Secrets** est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets à Disneyland Paris. Explorez les différents secrets du parc, filtrez les lieux par catégorie, et obtenez des informations détaillées sur chaque endroit.
+**Secret Park Explorer** est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets dans un célèbre parc à thème en Europe. Explorez les différents secrets du parc, filtrez les lieux par catégorie, et obtenez des informations détaillées sur chaque endroit.
 
 ## Fonctionnalités
 
--   Affichage de lieux secrets à Disneyland Paris sur une carte interactive.
--   Filtrage des lieux par différentes catégories (Main Street, Adventureland, Fantasyland, etc.).
+-   Affichage de lieux secrets dans le parc à thème sur une carte interactive.
+-   Filtrage des lieux par différentes catégories (Royaume Victorien, Jungle Mystérieuse, etc.).
 -   Détails des points d’intérêt avec des informations supplémentaires lorsqu'on clique sur un marqueur.
 -   Utilisation de l'API Google Maps pour l'affichage de la carte.
 
@@ -20,9 +20,9 @@
 ## Détail des fonctionnalités
 
 1. **Affichage de la carte** : La carte utilise l'API Google Maps pour afficher les points d'intérêt et les lieux secrets.
-2. **Filtrage des lieux** : Vous pouvez filtrer les lieux secrets en fonction de la zone (Main Street, Adventureland, Fantasyland, Discoveryland, Studios).
+2. **Filtrage des lieux** : Vous pouvez filtrer les lieux secrets en fonction de la zone (Royaume Victorien, Jungle Mystérieuse, etc.).
 3. **Informations détaillées sur les lieux** : En cliquant sur un marqueur, une fenêtre contextuelle s'ouvre pour afficher les détails du lieu secret.
-4. **Personnalisation de l'apparence de la carte** : La carte utilise un style personnalisé pour afficher les lieux d’intérêt spécifiques à Disney.
+4. **Personnalisation de l'apparence de la carte** : La carte utilise un style personnalisé pour afficher les lieux d’intérêt spécifiques au parc.
 
 ## Prérequis
 
@@ -39,8 +39,8 @@ Avant de commencer l'installation, assurez-vous d'avoir les éléments suivants 
 Clonez le projet en utilisant la commande suivante :
 
 ```bash
-git clone https://github.com/D3vThomas/Disney-Secret-App.git
-cd Disney-Secret-App
+git clone https://github.com/D3vThomas/Secret-Park-Explorer.git
+cd Secret-Park-Explorer
 ```
 
 ### 2. Installer les dépendances
@@ -69,7 +69,7 @@ Ouvrez le fichier `android/app/src/main/AndroidManifest.xml` et ajoutez la ligne
 ```xml
 <application
     android:name="io.flutter.app.FlutterApplication"
-    android:label="Disney-Secret-App"
+    android:label="Secret Park Explorer"
     android:icon="@mipmap/ic_launcher">
     <meta-data
         android:name="com.google.android.maps.v2.API_KEY"
@@ -103,7 +103,7 @@ L'APK sera généré dans le répertoire `build/app/outputs/flutter-apk/`.
 Voici la structure principale du projet :
 
 ```
-Disney-Secret-App/
+Secret-Park-Explorer/
 ├── android/                # Code spécifique à Android
 ├── assets/                 # Ressources comme les images et les fichiers JSON
 ├── lib/                    # Code Dart de l'application
@@ -131,7 +131,7 @@ Nous apprécions toutes les contributions et suggestions !
 Si vous avez des questions, des suggestions ou des idées, vous pouvez démarrer une nouvelle discussion dans notre repository GitHub.  
 Cliquez sur le lien ci-dessous pour commencer :
 
-[Start a new discussion](https://github.com/D3vThomas/App-Disney-Secret/discussions/2)
+[Start a new discussion](https://github.com/D3vThomas/App-Secret-Park-Explorer/discussions/2)
 
 ## Licence
 

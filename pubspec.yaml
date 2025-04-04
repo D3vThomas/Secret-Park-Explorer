@@ -1,5 +1,5 @@
 name: disney_secret
-description: "Carte Disney - Secrets est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets à Disneyland Paris."
+description: "Carte du parc - Secrets est une application interactive permettant de découvrir des lieux cachés et des points d'intérêt secrets."
 publish_to: "none"
 version: 0.1.0
 
