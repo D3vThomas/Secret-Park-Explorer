@@ -29,7 +29,7 @@
 
 ### Fonctionnalités principales
 
--   Affichage des secrets et points d'intérêt (POI) à Disneyland Paris via une carte interactive.
+-   Affichage des secrets et points d'intérêt (POI) via une carte interactive.
 -   **Filtrage des secrets par zone thématique** (Main Street, Adventureland, Fantasyland, Discoveryland, Studios).
 -   **Cartographie interactive** avec zoom et possibilité de navigation.
 -   Détails des secrets via pop-up lors du clic sur les points d'intérêt.
