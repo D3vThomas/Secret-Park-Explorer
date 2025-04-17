@@ -1,5 +1,26 @@
 # Changelog
 
+## [v0.4.0] - 2025-04-17
+
+### Changements importants
+
+-   **Ajout de la fonctionnalité photo par lieu secret** :
+
+    -   Il est désormais possible de **prendre une photo** à un emplacement secret et de l’associer au marqueur correspondant.
+    -   Les photos sont **stockées localement** sur l’appareil (aucune donnée n’est envoyée en ligne).
+    -   Si une photo est déjà liée à un marqueur, un bouton **"Voir la photo"** permet de la consulter dans une pop-up.
+
+-   **Utilisation de la caméra** :
+    -   Intégration de `image_picker`, `path_provider` et `shared_preferences`.
+    -   Sauvegarde des chemins d'accès aux photos dans `SharedPreferences` pour un accès persistant.
+
+### Autres améliorations
+
+-   Préparation du code pour la **suppression ou le remplacement de photo** dans une future version.
+-   Petits ajustements UI dans la gestion des filtres et des pop-ups.
+
+---
+
 ## [v0.3.0] - 2025-04-10
 
 ### Changements importants
@@ -11,6 +32,8 @@
 
 -   Correction de quelques **bugs mineurs de performance**.
 -   **Amélioration de la réactivité de l’interface** pour une navigation plus fluide.
+
+---
 
 ## [v0.2.0] - 2025-03-30
 
@@ -24,6 +47,8 @@
 
 -   **Optimisation de la performance** pour une expérience utilisateur plus fluide.
 -   **Amélioration de l’interface utilisateur** pour intégrer l'affichage des photos sans nuire à la navigation.
+
+---
 
 ## [v0.1.0] - 2025-03-15
 
