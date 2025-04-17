@@ -4,6 +4,8 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
+import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +35,7 @@ class _MapScreenState extends State<MapScreen> {
   Set<Marker> _allMarkers = {};
   Set<Marker> _filteredMarkers = {};
   Map<String, String> _markerTypes = {};
-  final Map<String, File?> _photoFiles = {};  // Dictionnaire pour stocker les photos liées aux marqueurs
+  final Map<String, String> _photoPaths = {}; // Map pour stocker les chemins des photos associées aux marqueurs
 
   final LatLng _disneyLocation = const LatLng(48.871234, 2.776808);
   String _selectedFilter = "all";
@@ -42,8 +44,10 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _loadMarkers();
+    _loadPhotoPaths(); // Charger les chemins des photos lors de l'initialisation
   }
 
+  // Charger les marqueurs à partir du fichier JSON
   Future<void> _loadMarkers() async {
     try {
       String jsonString = await rootBundle.loadString('assets/markers.json');
@@ -108,6 +112,33 @@ class _MapScreenState extends State<MapScreen> {
     }
   }
 
+  // Charger les chemins des photos depuis SharedPreferences
+  Future<void> _loadPhotoPaths() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _photoPaths.clear();
+      List<String>? photoPathsList = prefs.getStringList('photoPaths');
+      if (photoPathsList != null) {
+        for (var path in photoPathsList) {
+          var parts = path.split('::'); // Utilisation d'un séparateur personnalisé pour identifier la clé
+          if (parts.length == 2) {
+            _photoPaths[parts[0]] = parts[1];
+          }
+        }
+      }
+    });
+  }
+
+  // Sauvegarder le chemin de la photo dans SharedPreferences
+  Future<void> _savePhotoPath(String title, String path) async {
+    final prefs = await SharedPreferences.getInstance();
+    _photoPaths[title] = path;
+
+    // Convertir la Map en liste de String
+    List<String> pathsList = _photoPaths.entries.map((e) => '${e.key}::${e.value}').toList();
+    await prefs.setStringList('photoPaths', pathsList);
+  }
+
   void _filterMarkers(String type) {
     setState(() {
       _selectedFilter = type;
@@ -129,15 +160,14 @@ class _MapScreenState extends State<MapScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(detail),
-              // Si une photo a été prise, on affiche le bouton "Voir la photo"
-              if (_photoFiles.containsKey(title) && _photoFiles[title] != null)
+              if (_photoPaths.containsKey(title)) // Si une photo existe pour ce marqueur
                 ElevatedButton(
                   onPressed: () => _viewPhoto(title),
                   child: Text("Voir la photo"),
                 )
               else
                 ElevatedButton(
-                  onPressed: () => _takePhoto(title),  // Passage du titre pour l'associer à la photo
+                  onPressed: () => _takePhoto(title),
                   child: Text("Prendre une photo"),
                 ),
             ],
@@ -153,28 +183,34 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 
+  // Prendre une photo et la sauvegarder
   Future<void> _takePhoto(String title) async {
     final picker = ImagePicker();
     final XFile? photo = await picker.pickImage(source: ImageSource.camera);
 
     if (photo != null) {
-      setState(() {
-        _photoFiles[title] = File(photo.path);  // Associe la photo au marqueur par son titre
-      });
+      final directory = await getApplicationDocumentsDirectory();
+      final photoPath = '${directory.path}/$title.jpg';
 
-      // Une fois la photo prise, on ferme la fenêtre du marqueur
-      Navigator.of(context).pop();
+      File(photo.path).copy(photoPath).then((_) {
+        setState(() {
+          _photoPaths[title] = photoPath; // Sauvegarder le chemin de la photo
+        });
+
+        _savePhotoPath(title, photoPath); // Sauvegarder le chemin dans SharedPreferences
+        Navigator.of(context).pop();
+      });
     }
   }
 
+  // Afficher la photo dans une pop-up
   void _viewPhoto(String title) {
-    // Affiche une pop-up avec l'image prise pour ce marqueur
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Photo de $title'),
-          content: Image.file(_photoFiles[title]!),
+          content: Image.file(File(_photoPaths[title]!)),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
