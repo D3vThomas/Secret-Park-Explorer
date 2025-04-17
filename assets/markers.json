@@ -4,7 +4,6 @@
         "latitude": 48.870737,
         "longitude": 2.779221,
         "type": "secret_main_street",
-        "image": "entrance_cinema.png",
         "detail": "Dès que l'on pénètre dans le parc, l'ambiance cinématographique est omniprésente. Les murs sont décorés d'affiches des attractions, qui rappellent celles des films. Les Membre du personnel, quant à eux, sont vêtus de costumes évoquant ceux des ouvreurs de cinéma d'autrefois !"
     },
     {
@@ -33,7 +32,6 @@
         "latitude": 48.871921,
         "longitude": 2.777856,
         "type": "secret_main_street",
-        "image": "harrigtons.png",
         "detail": "En se plaçant à un point précis au sol dans la grande boutique victorienne de l'avenue principale, on peut entendre distinctement une personne située de l'autre côté du comptoir, comme si elle se tenait tout près. Un effet acoustique étonnant, rendu possible par l'architecture particulière du lieu."
     },
     {
@@ -48,7 +46,6 @@
         "latitude": 48.871298,
         "longitude": 2.778362,
         "type": "secret_main_street",
-        "image": "harrigtons.png",
         "detail": "À l'intérieur de la boutique, des rails sont visibles au plafond, rappelant les systèmes utilisés au 19e siècle pour faire circuler l'argent des caisses."
     },
     {
@@ -56,7 +53,6 @@
         "latitude": 48.871777,
         "longitude": 2.777702,
         "type": "secret_main_street",
-        "image": "lillys.png",
         "detail": "Une boutique au charme raffiné rend hommage à l'épouse du créateur. Elle se niche à deux pas d'un restaurant emblématique célébrant ce dernier, tous deux situés sur la majestueuse avenue principale"
     },
     {
@@ -71,7 +67,6 @@
         "latitude": 48.871499,
         "longitude": 2.777705,
         "type": "secret_main_street",
-        "image": "dd__hair_cuts.png",
         "detail": "Ce barbier traditionnel, niché le long de l'avenue principale, rend hommage à l'ambiance des petites villes américaines du début du XXe siècle."
     },
     {
@@ -86,7 +81,6 @@
         "latitude": 48.873101,
         "longitude": 2.776107,
         "type": "secret_main_street",
-        "image": "snail.png",
         "detail": "Les boules dorées ornant les tours du château sont en réalité des escargots, un clin d'œil à la gastronomie française."
     },
     {
@@ -101,7 +95,6 @@
         "latitude": 48.872884,
         "longitude": 2.775977,
         "type": "secret_main_street",
-        "image": "dragon.png",
         "detail": "Sous le château, un passage secret mène à la tanière d'un dragon. Cette créature aurait été capturée..."
     },
     {
@@ -116,7 +109,6 @@
         "latitude": 48.871513,
         "longitude": 2.777597,
         "type": "secret_main_street",
-        "image": "liberty.png",
         "detail": "Dans la Galerie de la Liberté, un passage dissimulé conduit à une salle où l'on peut assister à la reconstitution de l'inauguration d'un batiment historique."
     },
     {
@@ -138,7 +130,6 @@
         "latitude": 48.873168,
         "longitude": 2.776092,
         "type": "secret_main_street",
-        "image": "stained_glass_castle.png",
         "detail": "En te déplaçant devant le grand vitrail du château, tu observeras alternativement une rose ou des colombes, symbolisant l'innocence et la beauté."
     },
     {
@@ -146,7 +137,6 @@
         "latitude": 48.871805,
         "longitude": 2.777038,
         "type": "secret_main_street",
-        "image": "secret_passage.png",
         "detail": "Certains passages discrets, situés entre la galerie couverte de l'entrée principale et la zone à l'ambiance de l'Ouest, ou encore entre les univers d'exploration et de pionniers, permettent de traverser le parc plus rapidement."
     },
     {
@@ -162,7 +152,6 @@
         "latitude": 48.871634,
         "longitude": 2.775251,
         "type": "secret_frontierland",
-        "image": "tractor.png",
         "detail": "Le tracteur situé en face de l'entrée du 'train de la mine' est un véritable tracteur, acheté à un fermier américain. Ce dernier a utilisé l'argent de la vente pour acheter une bague à sa femme, n'ayant pas les moyens de le faire lors de leur mariage."
     },
     {
@@ -177,7 +166,6 @@
         "latitude": 48.870239,
         "longitude": 2.776359,
         "type": "secret_frontierland",
-        "image": "food_chain.png",
         "detail": "À la sortie du Manoir Hanté, dans le cimetierre, quatre tombes illustrent une chaîne alimentaire : l'écureuil dévoré par le fauve, le fauve mangé par l'homme, et ainsi de suite, jusqu'à l'ours qui vit 20 ans de plus."
     },
     {
@@ -234,7 +222,6 @@
         "latitude": 48.870584,
         "longitude": 2.77685,
         "type": "secret_frontierland",
-        "image": "ravenswood.png",
         "detail": "Dans la file d'attente de la maison hantée, observez attentivement le tableau représentant une jeune femme en robe blanche. Une silhouette sombre se dessine discrètement dans le coin supérieur… Comme une présence qui veille dans l'ombre."
     },
     {
@@ -242,7 +229,6 @@
         "latitude": 48.871649,
         "longitude": 2.776031,
         "type": "secret_frontierland",
-        "image": "well.png",
         "detail": "Non loin de la montagne minière, un vieux puits laisse entendre des bruits de pioches, comme si des mineurs travaillaient encore sous terre… Un écho venu du passé qui intrigue les plus attentifs."
     },
     {
@@ -250,7 +236,6 @@
         "latitude": 48.870692,
         "longitude": 2.775596,
         "type": "secret_frontierland",
-        "image": "thunder_bird.png",
         "detail": "Lors de la dernière montée du train, regardez bien à droite : une grotte abrite une gravure représentant un oiseau légendaire. Ce symbole ancien veille sur toute la montagne, chargé d'une énergie mystérieuse."
     },
     {
@@ -258,7 +243,6 @@
         "latitude": 48.871254,
         "longitude": 2.774586,
         "type": "secret_frontierland",
-        "image": "baby_mine.png",
         "detail": "Dans la file réservée aux accès rapides du train de la mine, on peut apercevoir une petite exploitation miniature, avec un chariot et une enseigne ancienne indiquant 'Baby Doe Mine'. Un clin d'œil discret à l'histoire des pionniers."
     },
     {
@@ -281,7 +265,6 @@
         "latitude": 48.872603,
         "longitude": 2.77554,
         "type": "secret_adventureland",
-        "image": "egg.png",
         "detail": "Un œuf géant trône à l'entrée de la zone d'inspiration orientale. Il évoque d'anciennes légendes maritimes et la capture d'un voyageur par un oiseau colossal, dans un nid scintillant de pierres précieuses."
     },
     {
@@ -289,7 +272,6 @@
         "latitude": 48.872605,
         "longitude": 2.775467,
         "type": "secret_adventureland",
-        "image": "chandelier.png",
         "detail": "Le grand lustre suspendu à l'entrée orientale a été offert par un souverain d'Afrique du Nord. Un banc est placé juste en dessous pour le préserver des passages encombrants."
     },
     {
@@ -297,7 +279,6 @@
         "latitude": 48.872401,
         "longitude": 2.772128,
         "type": "secret_adventureland",
-        "image": "indiana_jones.png",
         "detail": "Dans la file de l'attraction, on peut repérer des objets personnels abandonnés : une tente, un chapeau et un fouet, traces d'un explorateur disparu dont la légende reste vivace."
     },
     {
@@ -305,7 +286,6 @@
         "latitude": 48.873314,
         "longitude": 2.772983,
         "type": "secret_adventureland",
-        "image": "wanted_pirates.png",
         "detail": "Dans un restaurant à l'ambiance maritime/pirates, on trouve des affiches évoquant des forbans tristement célèbres. À vous de repérer les visages familiers…"
     },
     {
@@ -320,7 +300,6 @@
         "latitude": 48.871995,
         "longitude": 2.774124,
         "type": "secret_adventureland",
-        "image": "coca.png",
         "detail": "Près d'un point de restauration à thème africain, une vieille caisse métallique émet un bruit distinctif lorsqu'on l'ouvre. Un détail amusant pour les curieux. Essayer de la trouver"
     },
     {
@@ -328,7 +307,6 @@
         "latitude": 48.871814,
         "longitude": 2.773835,
         "type": "secret_adventureland",
-        "image": "tarentule.png",
         "detail": "À proximité d'un restaurant dans la jungle, une cage renferme une imposante tarentule. Une surprise effrayante pour les plus attentifs."
     },
     {
@@ -336,7 +314,6 @@
         "latitude": 48.872499,
         "longitude": 2.775051,
         "type": "secret_adventureland",
-        "image": "girafe.png",
         "detail": "Dans une boutique située à l'entrée du monde exotique, levez les yeux : une girafe semble avoir passé sa tête à travers le plafond pour grignoter quelques feuilles."
     },
     {
@@ -358,7 +335,6 @@
         "latitude": 48.873484,
         "longitude": 2.775372,
         "type": "secret_fantasyland",
-        "image": "snow_white.png",
         "detail": "Au-dessus d'une célèbre façade féerique, une silhouette féminine mystérieuse et désagréable observe les visiteurs depuis une fenêtre. Un regard glacial venu d'un autre temps."
     },
     {
@@ -366,7 +342,6 @@
         "latitude": 48.874298,
         "longitude": 2.776439,
         "type": "secret_fantasyland",
-        "image": "pizzeria.png",
         "detail": "Ce charmant restaurant italien est construit avec une légère inclinaison, évoquant une célèbre tour européenne. Une touche d'Italie en plein cœur de la zone féerique."
     },
     {
@@ -410,7 +385,6 @@
         "latitude": 48.874658,
         "longitude": 2.778732,
         "type": "secret_discoveryland",
-        "image": "rex.png",
         "detail": "Dans la file d'attente d'une célèbre mission spatiale, un ancien droïde-pilote, un brin détraqué, attend toujours dans sa boîte d'origine. Une relique amusante pour les fans de la première version."
     },
     {
@@ -418,7 +392,6 @@
         "latitude": 48.873279,
         "longitude": 2.777817,
         "type": "secret_discoveryland",
-        "image": "fresque.png",
         "detail": "Près de la boutique du futur, une gravure représente des engins emblématiques de la zone, mélangeant aventures sous-marines, voitures rétro et voyages stellaires. Un clin d'œil à tout l'univers de cette terre visionnaire."
     },
     {
@@ -433,7 +406,6 @@
         "latitude": 48.873797,
         "longitude": 2.779175,
         "type": "secret_discoveryland",
-        "image": "joke.png",
         "detail": "Avant d'embarquer dans la montagne du futur, observez les inscriptions en latin. En vous retournant, vous découvrirez une version humoristique cachée, preuve que les créateurs avaient le sens de l'humour."
     },
     {
@@ -441,7 +413,6 @@
         "latitude": 48.873914,
         "longitude": 2.77814,
         "type": "secret_discoveryland",
-        "image": "ruined_project.png",
         "detail": "Les deux grands hublots du café spatial de Discoveryland devaient à l'origine faire partie d'un ambitieux projet d'attraction abandonné. Aujourd'hui, ils témoignent de ce rêve inachevé."
     },
     {
@@ -478,7 +449,6 @@
         "latitude": 48.866499,
         "longitude": 2.778849,
         "type": "secret_studios",
-        "image": "hollywood_tower.png",
         "detail": "Regarde bien le panneau de l'hôtel maudit : sous la lumière, une autre inscription se révèle brièvement, comme une apparition venue d'une autre dimension."
     },
     {
@@ -528,7 +498,6 @@
         "latitude": 48.867334,
         "longitude": 2.777486,
         "type": "secret_studios",
-        "image": "ball.png",
         "detail": "Ici, tu es réduit à la taille d'un jouet ! Empreintes géantes, herbe surdimensionnée et décor façon boîte de jeu t'entourent pour te plonger dans l'univers des enfants."
     },
     {

@@ -10,6 +10,7 @@ dependencies:
     flutter:
         sdk: flutter
     google_maps_flutter: ^2.2.1
+    image_picker: ^0.8.5+3
 
 dev_dependencies:
     flutter_test:
@@ -28,4 +29,3 @@ flutter:
     assets:
         - assets/markers.json
         - assets/logo.png
-        - assets/images/
