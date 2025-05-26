@@ -8,6 +8,7 @@ import '../widgets/marker_detail_dialog.dart';
 import '../utils/photo_storage.dart';
 import '../utils/marker_loader.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MapScreen extends StatefulWidget {
     const MapScreen({super.key});
@@ -28,6 +29,7 @@ class _MapScreenState extends State<MapScreen> {
         super.initState();
         _loadMarkers();
         _loadPhotoPaths();
+        _checkAndShowPrivacyDialog();
     }
 
     Future<void> _loadMarkers() async {
@@ -242,4 +244,68 @@ class _MapScreenState extends State<MapScreen> {
             ),
         );
     }
+
+    Future<void> _checkAndShowPrivacyDialog() async {
+        final prefs = await SharedPreferences.getInstance();
+        bool? accepted = prefs.getBool('privacyAccepted');
+
+        if (accepted != true) {
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+                _showPrivacyDialog();
+            });
+        }
+    }
+
+    void _showPrivacyDialog() {
+        showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (context) {
+                return AlertDialog(
+                    title: const Text('Politique de confidentialité'),
+                    content: SingleChildScrollView(
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                                const Text(
+                                    'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
+                                    'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
+                                    'conformément à sa propre politique de confidentialité.',
+                                ),
+                                const SizedBox(height: 12),
+                                const Text('En utilisant cette application, vous acceptez les conditions de Google.'),
+                                const SizedBox(height: 12),
+                                InkWell(
+                                    onTap: _launchGooglePrivacyPolicy,
+                                    child: const Text(
+                                        'Voir la politique de confidentialité de Google',
+                                        style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
+                                    ),
+                                ),
+                            ],
+                        ),
+                    ),
+                    actions: [
+                        TextButton(
+                            onPressed: () async {
+                                final prefs = await SharedPreferences.getInstance();
+                                await prefs.setBool('privacyAccepted', true);
+                                Navigator.of(context).pop();
+                            },
+                            child: const Text("J'accepte"),
+                        ),
+                    ],
+                );
+            },
+        );
+    }
+
+    void _launchGooglePrivacyPolicy() async {
+        const url = 'https://policies.google.com/privacy';
+        if (await canLaunchUrl(Uri.parse(url))) {
+            await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+        }
+    }
+
+
 }
