@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:disney_secret/models/marker_model.dart';
+import 'package:secret_park_explorer/models/marker_model.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../widgets/filter_button.dart';

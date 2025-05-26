@@ -1,4 +1,4 @@
-package com.example.flutter_disney
+package com.mayers.secret_park_explorer
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
-name: disney_secret
-description: "Carte du parc - Secrets est une application interactive permettant de découvrir des lieux cachés et des points d'intérêt secrets."
+name: secret_park_explorer
+description: "Secret Park Explorer est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets dans un célèbre parc à thème en Europe. Explorez les différents secrets du parc, filtrez les lieux par catégorie, et obtenez des informations détaillées sur chaque endroit"
 publish_to: "none"
-version: 0.1.0
+version: 1.0.0
 
 environment:
     sdk: ^3.7.2
