@@ -257,55 +257,116 @@ class _MapScreenState extends State<MapScreen> {
     }
 
     void _showPrivacyDialog() {
-        showDialog(
-            context: context,
-            barrierDismissible: false,
-            builder: (context) {
-                return AlertDialog(
-                    title: const Text('Politique de confidentialité'),
-                    content: SingleChildScrollView(
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                                const Text(
-                                    'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
-                                    'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
-                                    'conformément à sa propre politique de confidentialité.',
-                                ),
-                                const SizedBox(height: 12),
-                                const Text('En utilisant cette application, vous acceptez les conditions de Google.'),
-                                const SizedBox(height: 12),
-                                InkWell(
-                                    onTap: _launchGooglePrivacyPolicy,
-                                    child: const Text(
-                                        'Voir la politique de confidentialité de Google',
-                                        style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
-                                    ),
-                                ),
-                            ],
-                        ),
+  showDialog(
+    context: context,
+    barrierDismissible: false,
+    builder: (context) {
+      return AlertDialog(
+        title: const Text(
+          'Politique de confidentialité',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        content: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
+                  'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
+                  'conformément à sa propre politique de confidentialité.',
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  'En utilisant cette application, vous acceptez les conditions de Google.',
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(height: 20),
+                GestureDetector(
+                  onTap: _launchGooglePrivacyPolicy,
+                  child: const Text(
+                    'Voir la politique de confidentialité de Google',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                      fontWeight: FontWeight.w600,
                     ),
-                    actions: [
-                        TextButton(
-                            onPressed: () async {
-                                final prefs = await SharedPreferences.getInstance();
-                                await prefs.setBool('privacyAccepted', true);
-                                Navigator.of(context).pop();
-                            },
-                            child: const Text("J'accepte"),
-                        ),
-                    ],
-                );
-            },
-        );
-    }
+                  ),
+                ),
+                const SizedBox(height: 12),
+                GestureDetector(
+                  onTap: _launchPrivacyPolicy,
+                  child: const Text(
+                    'Voir notre politique de confidentialité',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0, bottom: 8),
+            child: ElevatedButton(
+              onPressed: () async {
+                final prefs = await SharedPreferences.getInstance();
+                await prefs.setBool('privacyAccepted', true);
+                Navigator.of(context).pop();
+              },
+              child: const Text("J'accepte"),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+            ),
+          ),
+        ],
+      );
+    },
+  );
+}
+
 
     void _launchGooglePrivacyPolicy() async {
         const url = 'https://policies.google.com/privacy';
-        if (await canLaunchUrl(Uri.parse(url))) {
-            await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+        final uri = Uri.parse(url);
+
+        try {
+            final launched = await launchUrl(uri, mode: LaunchMode.inAppWebView);
+            if (!launched) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
+                );
+            }
+        } catch (e) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Erreur: $e')),
+            );
         }
     }
 
+    void _launchPrivacyPolicy() async {
+        const url = 'https://github.com/D3vThomas/Secret-Park-Explorer/blob/main/PRIVACY_POLICY.md';
+        final uri = Uri.parse(url);
+
+        try {
+            final launched = await launchUrl(uri, mode: LaunchMode.inAppWebView);
+            if (!launched) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
+                );
+            }
+        } catch (e) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Erreur: $e')),
+            );
+        }
+    }
 
 }
