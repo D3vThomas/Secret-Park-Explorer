@@ -1,7 +1,7 @@
 name: secret_park_explorer
 description: "Secret Park Explorer est une application interactive permettant de découvrir des lieux cachés et des points d’intérêt secrets dans un célèbre parc à thème en Europe. Explorez les différents secrets du parc, filtrez les lieux par catégorie, et obtenez des informations détaillées sur chaque endroit"
 publish_to: "none"
-version: 1.0.2 # à modifier pour les releases
+version: 1.0.0+2 # à modifier pour les releases
 
 environment:
     sdk: ^3.7.2
