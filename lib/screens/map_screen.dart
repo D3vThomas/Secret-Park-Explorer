@@ -1,11 +1,8 @@
-import 'dart:io';
-
 import 'package:secret_park_explorer/models/marker_model.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../widgets/filter_button.dart';
 import '../widgets/marker_detail_dialog.dart';
-import '../utils/photo_storage.dart';
 import '../utils/marker_loader.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -21,7 +18,7 @@ class MapScreenState extends State<MapScreen> {
     Set<Marker> _allMarkers = {};
     Set<Marker> _filteredMarkers = {};
     Map<String, String> _markerTypes = {};
-    final Map<String, String> _photoPaths = {};
+    final Map<String, List<String>> _photoPaths = {};
     String _selectedFilter = "all";
 
     @override
@@ -85,22 +82,26 @@ class MapScreenState extends State<MapScreen> {
             _photoPaths.clear();
             List<String>? photoPathsList = prefs.getStringList('photoPaths');
             if (photoPathsList != null) {
-                for (var path in photoPathsList) {
-                    var parts = path.split('::');
+                for (var entry in photoPathsList) {
+                    var parts = entry.split('::');
                     if (parts.length == 2) {
-                        _photoPaths[parts[0]] = parts[1];
+                        String title = parts[0];
+                        List<String> paths = parts[1].split('|'); // liste séparée par |
+                        _photoPaths[title] = paths;
                     }
                 }
             }
         });
     }
 
-    Future<void> _savePhotoPath(String title, String path) async {
+    Future<void> _savePhotoPath(String title, List<String> paths) async {
         final prefs = await SharedPreferences.getInstance();
-        _photoPaths[title] = path;
+        _photoPaths[title] = paths;
 
-        List<String> pathsList = _photoPaths.entries.map((e) => '${e.key}::${e.value}').toList();
-        await prefs.setStringList('photoPaths', pathsList);
+        List<String> allEntries = _photoPaths.entries
+            .map((e) => '${e.key}::${e.value.join('|')}')
+            .toList();
+        await prefs.setStringList('photoPaths', allEntries);
     }
 
     void _filterMarkers(String type) {
@@ -114,49 +115,25 @@ class MapScreenState extends State<MapScreen> {
         });
     }
 
-    void _showMarkerDetail(MarkerModel markerData) {
-        showDialog(
+    void _showMarkerDetail(MarkerModel markerData) async {
+        final updatedPhotos = await showDialog<List<String>>(
             context: context,
             builder: (BuildContext context) {
                 return MarkerDetailDialog(
                     title: markerData.name,
                     detail: markerData.detail,
-                    photoPath: _photoPaths[markerData.name],
-                    onTakePhoto: () => _takePhoto(markerData.name),
-                    onViewPhoto: () => _viewPhoto(markerData.name),
+                    initialPhotoPaths: _photoPaths[markerData.name] ?? [],
                 );
             },
         );
-    }
 
-    Future<void> _takePhoto(String title) async {
-        final photoPath = await takePhoto(title);
-        if (photoPath != null) {
-            if (!mounted) return;
+        // mettre à jour les photos dans MapScreen si l'utilisateur a pris de nouvelles photos
+        if (updatedPhotos != null) {
             setState(() {
-                _photoPaths[title] = photoPath;
+                _photoPaths[markerData.name] = updatedPhotos;
             });
-            _savePhotoPath(title, photoPath);
-            Navigator.of(context).pop();
+            _savePhotoPath(markerData.name, updatedPhotos);
         }
-    }
-
-    void _viewPhoto(String title) {
-        showDialog(
-            context: context,
-            builder: (BuildContext context) {
-                return AlertDialog(
-                    title: Text('Photo de $title'),
-                    content: Image.file(File(_photoPaths[title]!)),
-                    actions: [
-                        TextButton(
-                            onPressed: () => Navigator.of(context).pop(),
-                            child: Text("Fermer"),
-                        ),
-                    ],
-                );
-            },
-        );
     }
 
     @override
@@ -275,7 +252,7 @@ class MapScreenState extends State<MapScreen> {
                                 children: [
                                     const Text(
                                         'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
-                                        'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
+                                        'Cependant, l\'application utilise Google Maps, qui peut recueillir des données '
                                         'conformément à sa propre politique de confidentialité.',
                                         style: TextStyle(fontSize: 14),
                                     ),
@@ -350,7 +327,7 @@ class MapScreenState extends State<MapScreen> {
             if (!launched) {
                 if (!mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
+                    SnackBar(content: Text('Impossible d\'ouvrir le lien dans WebView')),
                 );
             }
         } catch (e) {
@@ -370,7 +347,7 @@ class MapScreenState extends State<MapScreen> {
             if (!launched) {
                 if (!mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
+                    SnackBar(content: Text('Impossible d\'ouvrir le lien dans WebView')),
                 );
             }
         } catch (e) {

@@ -169,13 +169,6 @@
         "detail": "À la sortie du Manoir Hanté, dans le cimetierre, quatre tombes illustrent une chaîne alimentaire : l'écureuil dévoré par le fauve, le fauve mangé par l'homme, et ainsi de suite, jusqu'à l'ours qui vit 20 ans de plus."
     },
     {
-        "name": "Un message mystérieux sur une vitre du Manoir Hanté",
-        "latitude": 48.870702,
-        "longitude": 2.777216,
-        "type": "secret_frontierland",
-        "detail": "Dans la file d'attente du Manoir Hanté, observe la première fenêtre où un message inquiétant est écrit sur la vitre : “Help Me” (aidez-moi)."
-    },
-    {
         "name": "Une tombe bruyante",
         "latitude": 48.870138,
         "longitude": 2.776323,
@@ -197,13 +190,6 @@
         "detail": "Lors d'une croisière sur la rivière de l'Ouest, un T-Rex figé dans la roche, est visible. Il aurait été surpris par une coulée de lave des millions d'années auparavant... Essayez de le repérer pendant votre navigation "
     },
     {
-        "name": "Une inscription inquiétante sur le portail du Manoir Hanté",
-        "latitude": 48.871049,
-        "longitude": 2.776778,
-        "type": "secret_frontierland",
-        "detail": "À l'entrée du Manoir Hanté, sur la plaque du portail, vous pourrez lire l'inscription latine : 'Non Omnis Moriar', signifiant 'Vous ne mourrez pas complètement...'"
-    },
-    {
         "name": "L'apparition de la mariée au Manoir Hanté",
         "latitude": 48.870497,
         "longitude": 2.776747,
@@ -223,6 +209,13 @@
         "longitude": 2.77685,
         "type": "secret_frontierland",
         "detail": "Dans la file d'attente de la maison hantée, observez attentivement le tableau représentant une jeune femme en robe blanche. Une silhouette sombre se dessine discrètement dans le coin supérieur… Comme une présence qui veille dans l'ombre."
+    },
+    {
+        "name": "Le Hollandais volant dans le tableau",
+        "latitude": 48.870507,
+        "longitude": 2.776730,
+        "type": "secret_frontierland",
+        "detail": "Dans la file d'attente de la maison hantée, observez attentivement le tableau sur votre droite juste après l'ascenseur, le mystérieux bateau pirate du légendaire Davy Jones y apparaît."
     },
     {
         "name": "Des bruits étranges dans le vieux puits",
@@ -400,13 +393,6 @@
         "longitude": 2.778661,
         "type": "secret_discoveryland",
         "detail": "Pendant l'attente dans la mission interstellaire, gardez un œil sur l'écran de tri des bagages… une forme familière et rondouillarde pourrait bien y apparaître de manière furtive."
-    },
-    {
-        "name": "Une blague en latin avant le décollage",
-        "latitude": 48.873797,
-        "longitude": 2.779175,
-        "type": "secret_discoveryland",
-        "detail": "Avant d'embarquer dans la montagne du futur, observez les inscriptions en latin. En vous retournant, vous découvrirez une version humoristique cachée, preuve que les créateurs avaient le sens de l'humour."
     },
     {
         "name": "Les vestiges d'un projet abandonné",

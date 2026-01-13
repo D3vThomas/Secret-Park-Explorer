@@ -8,13 +8,10 @@ Future<String?> takePhoto(String title) async {
 
     if (photo != null) {
         final directory = await getApplicationDocumentsDirectory();
-        final photoPath = '${directory.path}/$title.jpg';
-        File(photo.path).copy(photoPath);
+        final timestamp = DateTime.now().millisecondsSinceEpoch; // nom unique
+        final photoPath = '${directory.path}/$title-$timestamp.jpg';
+        await File(photo.path).copy(photoPath);
         return photoPath;
     }
     return null;
-}
-
-void savePhotoPath(Map<String, String> photoPaths, String title, String path) {
-    photoPaths[title] = path;
 }
