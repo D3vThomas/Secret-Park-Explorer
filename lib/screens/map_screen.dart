@@ -14,10 +14,10 @@ class MapScreen extends StatefulWidget {
     const MapScreen({super.key});
 
     @override
-    _MapScreenState createState() => _MapScreenState();
+    MapScreenState createState() => MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
+class MapScreenState extends State<MapScreen> {
     Set<Marker> _allMarkers = {};
     Set<Marker> _filteredMarkers = {};
     Map<String, String> _markerTypes = {};
@@ -132,6 +132,7 @@ class _MapScreenState extends State<MapScreen> {
     Future<void> _takePhoto(String title) async {
         final photoPath = await takePhoto(title);
         if (photoPath != null) {
+            if (!mounted) return;
             setState(() {
                 _photoPaths[title] = photoPath;
             });
@@ -257,81 +258,88 @@ class _MapScreenState extends State<MapScreen> {
     }
 
     void _showPrivacyDialog() {
-  showDialog(
-    context: context,
-    barrierDismissible: false,
-    builder: (context) {
-      return AlertDialog(
-        title: const Text(
-          'Politique de confidentialité',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        content: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
-                  'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
-                  'conformément à sa propre politique de confidentialité.',
-                  style: TextStyle(fontSize: 14),
-                ),
-                const SizedBox(height: 16),
-                const Text(
-                  'En utilisant cette application, vous acceptez les conditions de Google.',
-                  style: TextStyle(fontSize: 14),
-                ),
-                const SizedBox(height: 20),
-                GestureDetector(
-                  onTap: _launchGooglePrivacyPolicy,
-                  child: const Text(
-                    'Voir la politique de confidentialité de Google',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      decoration: TextDecoration.underline,
-                      fontWeight: FontWeight.w600,
+        showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (context) {
+                return AlertDialog(
+                    title: const Text(
+                        'Politique de confidentialité',
+                        style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                GestureDetector(
-                  onTap: _launchPrivacyPolicy,
-                  child: const Text(
-                    'Voir notre politique de confidentialité',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      decoration: TextDecoration.underline,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0, bottom: 8),
-            child: ElevatedButton(
-              onPressed: () async {
-                final prefs = await SharedPreferences.getInstance();
-                await prefs.setBool('privacyAccepted', true);
-                Navigator.of(context).pop();
-              },
-              child: const Text("J'accepte"),
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              ),
-            ),
-          ),
-        ],
-      );
-    },
-  );
-}
+                    content: SingleChildScrollView(
+                        child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8.0),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                    const Text(
+                                        'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
+                                        'Cependant, l’application utilise Google Maps, qui peut recueillir des données '
+                                        'conformément à sa propre politique de confidentialité.',
+                                        style: TextStyle(fontSize: 14),
+                                    ),
 
+                                    const SizedBox(height: 16),
+
+                                    const Text(
+                                        'En utilisant cette application, vous acceptez les conditions de Google.',
+                                        style: TextStyle(fontSize: 14),
+                                    ),
+
+                                    const SizedBox(height: 20),
+
+                                    GestureDetector(
+                                        onTap: _launchGooglePrivacyPolicy,
+                                        child: const Text(
+                                            'Voir la politique de confidentialité de Google',
+                                            style: TextStyle(
+                                                color: Colors.blue,
+                                                decoration: TextDecoration.underline,
+                                                fontWeight: FontWeight.w600,
+                                            ),
+                                        ),
+                                    ),
+
+                                    const SizedBox(height: 12),
+
+                                    GestureDetector(
+                                        onTap: _launchPrivacyPolicy,
+                                        child: const Text(
+                                            'Voir notre politique de confidentialité',
+                                            style: TextStyle(
+                                                color: Colors.blue,
+                                                decoration: TextDecoration.underline,
+                                                fontWeight: FontWeight.w600,
+                                            ),
+                                        ),
+                                    ),
+                                ],
+                            ),
+                        ),
+                    ),
+                    actions: [
+                        Padding(
+                            padding: const EdgeInsets.only(right: 8.0, bottom: 8),
+                            child: ElevatedButton(
+                                onPressed: () async {
+                                    final prefs = await SharedPreferences.getInstance();
+                                    await prefs.setBool('privacyAccepted', true);
+
+                                    if (!context.mounted) return;
+                                    Navigator.of(context).pop();
+                                },
+                                style: ElevatedButton.styleFrom(
+                                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                ),
+                                child: const Text("J'accepte"),
+                            ),
+                        ),
+                    ],
+                );
+            },
+        );
+    }
 
     void _launchGooglePrivacyPolicy() async {
         const url = 'https://policies.google.com/privacy';
@@ -340,11 +348,13 @@ class _MapScreenState extends State<MapScreen> {
         try {
             final launched = await launchUrl(uri, mode: LaunchMode.inAppWebView);
             if (!launched) {
+                if (!mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
                 );
             }
         } catch (e) {
+            if (!mounted) return;
             ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text('Erreur: $e')),
             );
@@ -358,11 +368,13 @@ class _MapScreenState extends State<MapScreen> {
         try {
             final launched = await launchUrl(uri, mode: LaunchMode.inAppWebView);
             if (!launched) {
+                if (!mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Impossible d’ouvrir le lien dans WebView')),
                 );
             }
         } catch (e) {
+            if (!mounted) return;
             ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text('Erreur: $e')),
             );
