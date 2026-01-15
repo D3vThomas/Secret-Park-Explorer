@@ -6,6 +6,8 @@ import '../widgets/marker_detail_dialog.dart';
 import '../utils/marker_loader.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:geolocator/geolocator.dart';
+
 
 class MapScreen extends StatefulWidget {
     const MapScreen({super.key});
@@ -20,6 +22,8 @@ class MapScreenState extends State<MapScreen> {
     Map<String, String> _markerTypes = {};
     final Map<String, List<String>> _photoPaths = {};
     String _selectedFilter = "all";
+    GoogleMapController? _mapController;
+    bool _isLocationEnabled = false;
 
     @override
     void initState() {
@@ -134,7 +138,87 @@ class MapScreenState extends State<MapScreen> {
             });
             _savePhotoPath(markerData.name, updatedPhotos);
         }
+
+        setState(() {
+            _isLocationEnabled = true;
+        });
+
+        if (!mounted) return;
+
+        // Recentrer la caméra sur l'utilisateur
+        _centerMapOnUser();
     }
+
+    Future<void> _enableUserLocation() async {
+        // Vérifier si le service de localisation est activé
+        bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+        if (!serviceEnabled) {
+            if (!mounted) return;
+            ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                    content: Text(
+                        'Le service de localisation est désactivé. Veuillez l\'activer.'
+                    )
+                ),
+            );
+            return;
+        }
+
+        // Vérifier la permission
+        LocationPermission permission = await Geolocator.checkPermission();
+        if (permission == LocationPermission.denied) {
+            permission = await Geolocator.requestPermission();
+        }
+
+        if (permission == LocationPermission.denied || permission == LocationPermission.deniedForever) {
+            if (!mounted) return;
+            ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Permission de localisation refusée')),
+            );
+            return;
+        }
+
+        // Tout est OK → activer la localisation
+        setState(() {
+            _isLocationEnabled = true;
+        });
+
+        if (!mounted) return;
+
+        // Recentrer la caméra sur l'utilisateur
+        await _centerMapOnUser();
+    }
+
+    Future<void> _centerMapOnUser() async {
+        try {
+            // Créer des settings pour Android/iOS
+            LocationSettings locationSettings = const LocationSettings(
+                accuracy: LocationAccuracy.best, // équivalent de desiredAccuracy
+                distanceFilter: 0,
+            );
+
+            // Récupérer la position actuelle
+            Position position = await Geolocator.getCurrentPosition(
+                locationSettings: locationSettings,
+            );
+
+            // Recentrer la caméra
+            if (_mapController != null) {
+                _mapController!.animateCamera(
+                    CameraUpdate.newLatLngZoom(
+                        LatLng(position.latitude, position.longitude),
+                        17.0,
+                    ),
+                );
+            }
+        } catch (e) {
+            if (!mounted) return;
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Impossible de récupérer la position : $e')),
+            );
+        }
+    }
+
 
     @override
     Widget build(BuildContext context) {
@@ -205,21 +289,31 @@ class MapScreenState extends State<MapScreen> {
                     ),
                     Expanded(
                         child: GoogleMap(
-                            initialCameraPosition: CameraPosition(
+                            onMapCreated: (controller) => _mapController = controller,
+                            initialCameraPosition: const CameraPosition(
                                 target: LatLng(48.871234, 2.776808),
                                 zoom: 15.5,
                             ),
                             markers: _filteredMarkers,
-                            myLocationEnabled: true,
-                            myLocationButtonEnabled: true,
+                            myLocationEnabled: _isLocationEnabled,
+                            myLocationButtonEnabled: false, // on utilise notre bouton
                             zoomControlsEnabled: true,
                             zoomGesturesEnabled: true,
                             scrollGesturesEnabled: true,
                             compassEnabled: true,
-                        ),
+                        )
                     ),
                 ],
             ),
+            floatingActionButton: Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
+                child: FloatingActionButton(
+                onPressed: _enableUserLocation,
+                tooltip: 'Afficher ma position',
+                child: const Icon(Icons.my_location),
+                ),
+            ),
+            floatingActionButtonLocation: FloatingActionButtonLocation.startFloat, 
         );
     }
 
@@ -252,8 +346,17 @@ class MapScreenState extends State<MapScreen> {
                                 children: [
                                     const Text(
                                         'Secret Park Explorer ne collecte ni ne stocke aucune donnée personnelle. '
-                                        'Cependant, l\'application utilise Google Maps, qui peut recueillir des données '
-                                        'conformément à sa propre politique de confidentialité.',
+                                        'L\'application peut utiliser la localisation de l\'utilisateur uniquement '
+                                        'pour afficher sa position sur la carte et calculer des distances, '
+                                        'sans stockage, sans transmission et sans utilisation en arrière-plan. '
+                                        'L\'accès à la localisation est optionnel.',
+                                        style: TextStyle(fontSize: 14),
+                                    ),
+
+                                    const SizedBox(height: 16),
+
+                                    const Text(
+                                        'La localisation n\'est utilisée qu\'après action volontaire de l\'utilisateur.',
                                         style: TextStyle(fontSize: 14),
                                     ),
 
